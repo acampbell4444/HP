@@ -1,6 +1,6 @@
 #navBarLogo {
-  height: 250px;
-  width: 250px;
+  height: 175px;
+  width: 175px;
   margin-top: 1%;
   left: 0;
   z-index: 99;
@@ -18,14 +18,17 @@ li {
 
 #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
 	color: #00cc44;
+  background-color: black;
+
 }
+
 
 #navLinkTextfirst:hover, #navLinkTextSecond:hover, #navLinkText:hover {
   color: blue;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
-	min-height: 120px;
+	height: 115px;
 	display: inline-block;
 }
 
@@ -35,6 +38,8 @@ li {
 
 @media only screen and (min-width: 768px) {
   #navBarLogo {
+    height: 250px;
+    width: 250px;
 	  float: left;
 	  margin-top: 1%;
     position: fixed;
