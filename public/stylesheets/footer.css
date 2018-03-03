@@ -2,14 +2,13 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 50px;
+    height: 23px;
     width: 100%;
     background-color: red;
     color: white;
     text-align: center;
     background :url('../images/pile-of-stones.jpg') no-repeat center center;
     background-size: 100% 100%;
-    padding-top: 2%;
     z-index: 99999;
 }
 
