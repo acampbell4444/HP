@@ -1,0 +1,38 @@
+#pageContainer {
+  margin-top: 300px;
+  overflow-y: scroll;
+}
+
+#remodelingText {
+  margin-bottom: 13%;
+  z-index: 999;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+	#pageContainer {
+	  margin-top: 130px;
+	}
+
+	#remodelingText {
+	  font-size: 24px;
+      line-height: 32px;
+    }
+}
+
+.threeStars {
+  font-size: 30px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00cc44;
+}
+

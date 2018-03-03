@@ -30,7 +30,12 @@ module.exports = {
       test: /jsx?$/,
       exclude: /(node_modules|bower_components)/,
       loader: 'babel-loader' // config in .babelrc
-    }]
+    },
+    {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader'
+    },
+    ]
   },
   plugins: devMode
     ? [new LiveReloadPlugin({appendScriptTag: true})]
