@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Remodeling extends Component {
   
   componentDidMount() {
-  	document.body.style.backgroundImage = "url('images/brownstucco.jpg')"
+    document.body.style.backgroundImage = "url('images/woodBackground.jpg')"
   	window.scrollTo(0, 0)
   }
 
@@ -18,7 +18,7 @@ export default class Remodeling extends Component {
           with GatorBacked Solutions.<br/><br/>
           In order to remain sustainable, GatorBacked Solutions provides cost effective environmentally conscious options for its clients. Maintaining your property as a part of your effort in sustainability increases the life of your investments.
           <br/><br/> Be a part of the solution with GatorBacked Solutions. Contact a GatorBacked Solutions consultant near you today.</h3>
-	        <div className='container'>
+	        <div className='cont'>
             <p className='threeStars'>{'\u2728'}</p>
           </div>
         </div>

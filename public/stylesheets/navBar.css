@@ -75,6 +75,10 @@ li {
   .nav.navbar-nav {
 	  font-size: 20px;
   }
+  
+  .threeStars {
+    margin: 0 auto;
+  }
 }
 
 

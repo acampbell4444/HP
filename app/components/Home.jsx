@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Home extends Component {
 
   componentDidMount() {
-  	document.body.style.backgroundImage = "url('images/brownstucco.jpg')"
+  	document.body.style.backgroundImage = "url('images/woodBackground.jpg')"
   	window.scrollTo(0, 0)
   }
 
@@ -17,7 +17,7 @@ export default class Home extends Component {
 			We have developed methods with conscious efforts made toward improving the way we impact the environment. Approaching design opportunities with economic and environmental solutions that custom fit any project or budget.<br/><br/>
 			We have made a decision to provide our clients with a sustainable environmentally safe alternative to residential and commercial construction, or renovation.
 	      </h3>
-		<div className='container'>
+		<div className='cont'>
 			<div id='dorkGuyVid'>
 			
 			    <video controls> 
@@ -28,6 +28,9 @@ export default class Home extends Component {
 			      </object>
 			    </video>
 			    <figcaption><i>Preparing For A Future</i></figcaption>
+			    <div className='cont'>
+                 <p className='threeStars'>{'\u2728'}</p>
+		        </div>
 			
 		    </div>
 		 </div>
