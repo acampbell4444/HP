@@ -10,24 +10,20 @@
 
 #pic1leg {
 	position: fixed;
-	top: 60px;
-	font-size: 20px;
-	left: 10%;
+	left: 15%;
 }
 
 .slide, .selected {
-	height: 230px;
 	display: inline-block;
 }
 
-#tripPic {
-	min-height: 230px;
-}
 
 #leg1Text {
   color: white;
   font-family: 'Expletus Sans', Bold;
   text-align: left;
+  position: fixed;
+  top: 20%;
 }
 
 #leg1subText {
@@ -35,17 +31,19 @@
   font-size: 14px;
   font-family: 'Expletus Sans', Bold;
   text-align: left;
+  position: fixed;
+  top: 65%;
 }
 
 #bookingButton {
     position: fixed;
     z-index: 99999;
     margin: 1% auto 0;
-    top: 170px;
+    top: 33%;
     padding: 6px 14px;
     border: 1px solid white;
     border-radius: 43px;
-    background: transparent;
+    background: black;
     color: white;
     font-family: 'Expletus Sans', Bold;
     z-index: 999999;
@@ -74,6 +72,7 @@
       font-family: 'Expletus Sans', Bold;
       text-align: left;
       font-size: 29px;
+      top: 18%
      }
 
 	#leg1subText {
@@ -84,8 +83,7 @@
 	}
 
 	#bookingButton {
-      top: 330px;
-      left: 40%;
+      top: 180px;
       font-size: 44px;
       padding-top: 1%;
     }
@@ -103,13 +101,24 @@
   	color: black;
   }
 
+
+
 }
 
-@media only screen and (min-width: 1000px) {
-  	#bookingButton {
-      top: 220px;
-      left: 100px;
+@media only screen and (min-width: 930px) {
+	#leg1Text {
+      top: 12%
+     }
+
+    #leg1subText {
+	  top: 25%;
+	}
+
+	#bookingButton {
+  	  top: 50%;
+  	  font-size: 30px;
     }
+
 }
 
 

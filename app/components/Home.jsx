@@ -11,9 +11,9 @@ export default class Home extends Component {
   render() {
     return (
       <div id='homeCanvas'>
-              <Carousel showArrows={true} showThumbs={false} autoPlay={true} interval={4000} infiniteLoop={true} >
+              <Carousel showArrows={true} showThumbs={false} autoPlay={true} interval={14000} infiniteLoop={true} >
                 <div id='tripCont'>
-                    <img src="/images/tripleWide.jpg" id='tripPic'/>
+                    <img src="/images/tripleWide.jpg"/>
                     <div className="legendOverRide" id='pic1leg'>
                       <p id='leg1Text'>COME FLY WITH US!</p>
                       <p id='leg1subText'>Parasailing is safe, easy, and fun.<br/> No skill required. 
