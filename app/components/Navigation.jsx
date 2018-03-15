@@ -14,7 +14,11 @@ export default class Navigation extends Component {
     >
       <Navbar.Header>
       <Navbar.Brand>
-       <div id='navBarLogo'>
+        <div className="container">
+        <div className="gradient"></div>
+        <div className="tree"></div>
+        <div className="lines"></div>
+        </div>
       <NavItem eventKey={6} 
            onClick={e => {
             browserHistory.push('home')
@@ -42,7 +46,7 @@ export default class Navigation extends Component {
        <NavItem id='navLinkTextSecond' eventKey={2} href="#" 
             onClick={e => browserHistory.push('rainHarvest')} 
        >
-          RAIN HARVESTING
+          GALLERY
        </NavItem>      
        
        <NavItem id='navLinkText' eventKey={3} href="#"

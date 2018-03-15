@@ -9,10 +9,10 @@ export default class Footer extends Component {
       <div id='footer'>
         <p>
          <span id='footerText1' onClick={e => browserHistory.push('home')}> 
-           GatorBacked Solutions  
+           Havasu Parasail  
         </span> 
          <span id='dot'> • </span>
-         <a id='footerText2' href="tel:970-347-0474" > (970) 347-0474</a>
+         <a id='footerText2' href="tel:970-347-0474" > (310) 849-9353</a>
         </p>
       </div>
     </div>
