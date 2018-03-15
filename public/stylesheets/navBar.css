@@ -7,6 +7,7 @@
   float: left;
 }
 
+
 #logopic {
   margin-top: -40px;
 }
@@ -30,12 +31,6 @@ li {
   list-style: none;
 }
 
-/*#navBarLogo:hover {
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-          animation: rotate-center 0.6s ease-in-out both;
-}
-*/
-
 #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
 	background-color: black;
   font-size: 25px;
@@ -57,6 +52,41 @@ li {
 	z-index: 99999999;
 }
 
+.navButtGroup {
+  position:fixed;
+  top: 85px;
+  margin: 0 auto;
+  left: 15%;
+}
+
+.navButt {
+    background-color: white;
+    border-color: #9D9D9D;
+    margin-left: 5px !important;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% !important;
+}
+
+#facebook {
+  background-color: #2b4170; /* fallback color */
+  background: -moz-linear-gradient(top, #3b5998, #2b4170);
+  background: -ms-linear-gradient(top, #3b5998, #2b4170);
+  background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+  color: white;
+}
+
+#instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  color: white;
+}
+
+#contact {
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   #navBarLogo {
     height: 150px;
@@ -64,6 +94,10 @@ li {
 	  float: left;
 	  margin-top: 2%;
     margin-left: 10px;
+  }
+
+  .center {
+    margin: 0 auto;
   }
 
   #bizName {
@@ -77,6 +111,13 @@ li {
     background-color: black;
     background-size: 100% 100%;
   }
+
+  .navButtGroup {
+    position:fixed;
+    top: 110px;
+    margin: 0 auto;
+    left: 35%;
+}
 
   #navLinkText {
     background-color: transparent;
@@ -125,6 +166,10 @@ li {
   #navLinkTextSecond {
     font-size: 30px;
   }
+
+  .navButtGroup {
+    left: 40%;
+   }
 }
 
 @media only screen and (min-width: 1200px) {

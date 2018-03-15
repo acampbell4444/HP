@@ -43,3 +43,7 @@ a:hover {
   color: #00cc44;
 }
 
+.btn:focus {
+  outline: none;
+}
+

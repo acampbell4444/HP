@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
-import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Image } from 'react-bootstrap'
+import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Image, ButtonGroup, Button } from 'react-bootstrap'
 import { browserHistory } from 'react-router'
+import Icon from 'react-icons-kit'
+import { facebook } from 'react-icons-kit/icomoon/facebook'
+import { instagram } from 'react-icons-kit/icomoon/instagram'
+ import { phone } from 'react-icons-kit/icomoon/phone'
+
 
 export default class NavBar extends Component {
 
@@ -67,6 +72,29 @@ export default class NavBar extends Component {
 		  </Nav>
 
 	    </Navbar.Collapse>
+	      
+	      <div className='navButtGroup'>
+	      <div className='center'>
+	        <ButtonGroup>
+		      <Button className='navButt' id='facebook'
+		              onClick={()=> window.open('https://www.facebook.com/lakehavasu.parasail.5', '_blank')}>
+                <Icon size={30} icon={facebook}></Icon>
+		      </Button>
+		      <a href="tel:310-849-9353" >
+		      <Button className='navButt' id='contact'>
+		         <Icon size={30} icon={phone}></Icon>
+		      </Button>
+		      </a>
+		    </ButtonGroup>
+		    <ButtonGroup>
+		      <Button className='navButt' id='instagram' 
+		              onClick={()=> window.open('https://www.instagram.com/lakehavasuparasailing/')}>
+		         <Icon size={30} icon={instagram}></Icon>
+		      </Button>
+		    </ButtonGroup>
+	      </div>
+	      </div>
+	  
 	  </Navbar>
 	  </div>
     )
