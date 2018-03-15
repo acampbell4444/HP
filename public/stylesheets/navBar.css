@@ -19,6 +19,7 @@
   margin-left: 4%;
   position: relative;
   z-index: 9999999;
+  font-style: italic;
 }
 
 #bizName:hover {
@@ -37,6 +38,8 @@ li {
 
 #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
 	background-color: black;
+  font-size: 25px;
+  padding: 15px;
 }
 
 
@@ -65,21 +68,21 @@ li {
 
   #bizName {
      margin-left: 45px;
-     font-size: 35px;
+     font-size: 32px;
      margin-top:49px;
   }
 
   .navbar.navbar-inverse.navbar-fixed-top {
-    /*	background: rgba(0, 0, 0, 0.6);*/
 	  height: 130px;
     background-color: black;
-/*    background :url('../images/caliPalms.jpg') no-repeat center center;
-*/    
     background-size: 100% 100%;
   }
 
   #navLinkText {
     background-color: transparent;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 22px;
   }
 
   #navLinkTextfirst { 
@@ -89,15 +92,18 @@ li {
 
   #navLinkTextSecond {
     margin-top: 0px;
-    margin-left: 150px;
+    margin-left: 300px;
     z-index: 999;
     overflow: hidden;
     background-color: transparent;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 50px;
+    font-size: 22px;
   }
 
 
   .nav.navbar-nav {
-     font-size: 20px;
      margin-top: 0px;
   }
 }
@@ -110,12 +116,20 @@ li {
     .nav.navbar-nav {
      font-size: 27px;
   }
+
+    #navLinkText {
+    font-size: 30px;
+  }
+
+
+  #navLinkTextSecond {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .nav.navbar-nav {
     font-size: 29px;
-    margin-top: 50px;
   }
 }
 
