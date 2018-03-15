@@ -1,17 +1,116 @@
-video {
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  margin-top: 10%;
+#homeCanvas {
+	margin-top: 100px;
+	color: black;
+	overflow-y: scroll;
 }
 
-figcaption {
-	text-align: center;
-	margin-bottom: 12%;
+.legendOverRide {
+	background-color: transparent !important;
+}
+
+#pic1leg {
+	position: fixed;
+	top: 60px;
+	font-size: 20px;
+	left: 10%;
+}
+
+.slide, .selected {
+	height: 230px;
+	display: inline-block;
+}
+
+#tripPic {
+	min-height: 230px;
+}
+
+#leg1Text {
+  color: white;
+  font-family: 'Expletus Sans', Bold;
+  text-align: left;
+}
+
+#leg1subText {
+  color: white;
+  font-size: 14px;
+  font-family: 'Expletus Sans', Bold;
+  text-align: left;
+}
+
+#bookingButton {
+    position: fixed;
+    z-index: 99999;
+    margin: 1% auto 0;
+    top: 170px;
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius: 43px;
+    background: transparent;
+    color: white;
+    font-family: 'Expletus Sans', Bold;
+    z-index: 999999;
+    margin-bottom: 5%;
+}
+
+#bookingButton:hover {
+	color: #DB4C3F;
+	border-color: #DB4C3F;;
+	cursor: pointer;
+}
+
+#bkText {
+     font-size: 52px;
 }
 
 @media only screen and (min-width: 768px) {
-  video {
-    width: 50%;
+
+	#homeCanvas {
+		margin-top: 130px;
+		color: black;
+	}
+
+	#leg1Text {
+      color: white;
+      font-family: 'Expletus Sans', Bold;
+      text-align: left;
+      font-size: 29px;
+     }
+
+	#leg1subText {
+	  color: white;
+	  font-size: 21px;
+	  font-family: 'Expletus Sans', Bold;
+	  text-align: left;
+	}
+
+	#bookingButton {
+      top: 330px;
+      left: 40%;
+      font-size: 44px;
+      padding-top: 1%;
+    }
+
+ .slide, .selected {
+	height: 500px;
   }
+
+  #underCar {
+  	color: black;
+  	margin-bottom: 200px;
+  }
+
+  #underCarText {
+  	color: black;
+  }
+
 }
+
+@media only screen and (min-width: 1000px) {
+  	#bookingButton {
+      top: 220px;
+      left: 100px;
+    }
+}
+
+
+

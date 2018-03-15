@@ -41,9 +41,12 @@
 a:hover {
   text-decoration: none;
   color: #00cc44;
+  cursor: pointer;
 }
 
 .btn:focus {
   outline: none;
 }
+
+
 

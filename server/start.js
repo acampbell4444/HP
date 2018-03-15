@@ -54,6 +54,7 @@ module.exports = app
 
   // BootStrap
   .use('/bootstrap', express.static(join(__dirname, '../node_modules/bootstrap/dist')))
+  .use('/carouselStyle', express.static(join(__dirname, '../node_modules/react-responsive-carousel/lib/styles')))
   
 
   // Serve our api - ./api also requires in ../db, which syncs with our database

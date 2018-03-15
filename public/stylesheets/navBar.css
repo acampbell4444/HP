@@ -63,8 +63,8 @@ li {
     background-color: white;
     border-color: #9D9D9D;
     margin-left: 5px !important;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50% !important;
 }
 
@@ -74,12 +74,14 @@ li {
   background: -ms-linear-gradient(top, #3b5998, #2b4170);
   background: -webkit-linear-gradient(top, #3b5998, #2b4170);
   color: white;
+  padding-right: 40px;
 }
 
 #instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   color: white;
+  padding-right: 40px;
 }
 
 #contact {

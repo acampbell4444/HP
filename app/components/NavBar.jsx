@@ -77,14 +77,16 @@ export default class NavBar extends Component {
 	      <div className='center'>
 	        <ButtonGroup>
 		      <Button className='navButt' id='facebook'
-		              onClick={()=> window.open('https://www.facebook.com/lakehavasu.parasail.5', '_blank')}>
+		              onClick={()=> window.open('https://www.facebook.com/havasuparasail/', '_blank')}>
                 <Icon size={30} icon={facebook}></Icon>
 		      </Button>
+		      
 		      <a href="tel:310-849-9353" >
 		      <Button className='navButt' id='contact'>
 		         <Icon size={30} icon={phone}></Icon>
 		      </Button>
 		      </a>
+		    
 		    </ButtonGroup>
 		    <ButtonGroup>
 		      <Button className='navButt' id='instagram' 
