@@ -9,11 +9,12 @@ import store from './store'
 
 import NavBar from './containers/navContainer'
 import Home from './containers/homeContainer'
-import RainHarvest from './containers/rainHarvestContainer'
+import Gallery from './containers/galleryContainer'
 
-import Remodeling from './components/Remodeling'
-import Landscaping from './components/Landscaping'
+import Reservation from './components/Reservation'
 import Contact from './components/Contact'
+import FAQ from './components/FAQ'
+
 import Login from './components/Login'
 import WhoAmI from './components/WhoAmI'
 import NotFound from './components/NotFound'
@@ -37,10 +38,10 @@ render(
       <Route path="/" component={GatorBacked}>
         <IndexRedirect to="/home" />
         <Route path="/home" component={Home} />
-        <Route path="/rainHarvest" component={RainHarvest} />
-        <Route path="/remodeling" component={Remodeling} />
-        <Route path="/landscaping" component={Landscaping} />
+        <Route path="/reservations" component={Reservation} />
+        <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
+        <Route path="/faq" component={FAQ} />
       </Route>
       <Route path='*' component={NotFound} />
     </Router>

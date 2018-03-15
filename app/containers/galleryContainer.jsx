@@ -1,4 +1,4 @@
-import RainHarvest from '../components/RainHarvest'
+import Gallery from '../components/Gallery'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (state, ownProps) => {
@@ -12,4 +12,4 @@ const mapDispatchToProps = dispatch => ({
 
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(RainHarvest)
+export default connect(mapStateToProps, mapDispatchToProps)(Gallery)

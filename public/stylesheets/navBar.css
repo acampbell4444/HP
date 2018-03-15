@@ -1,30 +1,47 @@
 #navBarLogo {
-  height: 175px;
-  width: 175px;
+  height: 65px;
+  max-width: 65px;
   margin-top: 1%;
   left: 0;
   z-index: 99;
+  float: left;
+}
+
+#logopic {
+  margin-top: -40px;
+}
+
+#bizName {
+  margin-top: 40px;
+  width: 300px;
+  color: white;
+  font-size: 30px;
+  margin-left: 4%;
+  position: relative;
+  z-index: 9999999;
+}
+
+#bizName:hover {
+  color: #DB4C3F;
 }
 
 li {
   list-style: none;
 }
 
-#navBarLogo:hover {
+/*#navBarLogo:hover {
   -webkit-animation: rotate-center 0.6s ease-in-out both;
           animation: rotate-center 0.6s ease-in-out both;
 }
-
+*/
 
 #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
-	color: #00cc44;
-  background-color: black;
-
+	background-color: black;
 }
 
 
 #navLinkTextfirst:hover, #navLinkTextSecond:hover, #navLinkText:hover {
-  color: blue;
+  color: #DB4C3F;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
@@ -33,60 +50,74 @@ li {
 }
 
 .navbar-collapse.collapse.in {
-	/*text-align: center;*/
+  position: relative;
+	z-index: 99999999;
 }
 
 @media only screen and (min-width: 768px) {
   #navBarLogo {
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
 	  float: left;
-	  margin-top: 1%;
-    position: fixed;
+	  margin-top: 2%;
+    margin-left: 10px;
   }
+
+  #bizName {
+     margin-left: 45px;
+     font-size: 35px;
+     margin-top:49px;
+  }
+
   .navbar.navbar-inverse.navbar-fixed-top {
     /*	background: rgba(0, 0, 0, 0.6);*/
-	  height: 180px;
-    background :url('../images/navBackGround.jpeg') no-repeat center center;
+	  height: 130px;
+    background-color: black;
+/*    background :url('../images/caliPalms.jpg') no-repeat center center;
+*/    
     background-size: 100% 100%;
   }
 
   #navLinkText {
-    margin-top: 80px;
-    background-color: black;
+    background-color: transparent;
   }
 
   #navLinkTextfirst { 
     display: none;
+    background-color: transparent;
   }
 
   #navLinkTextSecond {
-    margin-top: 80px;
+    margin-top: 0px;
     margin-left: 150px;
     z-index: 999;
-    background-color: black;
     overflow: hidden;
+    background-color: transparent;
   }
 
 
   .nav.navbar-nav {
-	  font-size: 16px;
-	  margin-left: 0px;
-    margin-top: 50px;
+     font-size: 20px;
+     margin-top: 0px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .nav.navbar-nav {
-	  font-size: 20px;
-  }
-  
   .threeStars {
     margin: 0 auto;
   }
+
+    .nav.navbar-nav {
+     font-size: 27px;
+  }
 }
 
-
+@media only screen and (min-width: 1200px) {
+  .nav.navbar-nav {
+    font-size: 29px;
+    margin-top: 50px;
+  }
+}
 
 
 @-webkit-keyframes rotate-center {
@@ -109,54 +140,4 @@ li {
             transform: rotate(360deg);
   }
 }
-
-.container {
-  width: 66vmin;
-  height: 66vmin;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.gradient {
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #A12BFB), color-stop(#FC2DFC), color-stop(75%, #EB209B));
-  background: linear-gradient(#A12BFB 25%, #FC2DFC, #EB209B 75%);
-}
-
-.lines {
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: repeating-linear-gradient(rgba(0, 0, 0, 0.725), rgba(0, 0, 0, 0.725) 2.5%, transparent 2.5%, transparent 5.25%);
-  -webkit-animation: lines linear infinite .75s;
-          animation: lines linear infinite .75s;
-}
-
-.tree {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(https://78.media.tumblr.com/6fbf1edc445d7210e02d20e6e342287a/tumblr_ozop06XvsX1vq64mxo1_1280.png) 55% 5vmin no-repeat;
-  background-size: 70%;
-  -webkit-filter: brightness(0%) blur(0.5px);
-          filter: brightness(0%) blur(0.5px);
-}
-
-@-webkit-keyframes lines {
-  to {
-    background-position: 0 4vmin;
-  }
-}
-
-@keyframes lines {
-  to {
-    background-position: 0 4vmin;
-  }
-}
-
 

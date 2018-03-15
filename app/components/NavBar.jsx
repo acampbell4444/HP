@@ -14,15 +14,18 @@ export default class NavBar extends Component {
 	  >
 	    <Navbar.Header>
 		  <Navbar.Brand>
-		   <div id='navBarLogo'>
+		   <div>
 			<NavItem eventKey={6} 
 					 onClick={e => {
 						browserHistory.push('home')
 						this.setState({toggleNav: false})
 					 }}
 
-			>
-				<Image src="images/earth_small.png" rounded responsive />
+			>   
+			    <div id='navBarLogo'>
+				<Image src="images/parasailLogo.png" rounded responsive id='logopic' />
+				</div>
+				<p id='bizName'>Havasu Parasail</p>
 			</NavItem>
 			</div>
 		  </Navbar.Brand>
@@ -32,34 +35,34 @@ export default class NavBar extends Component {
 		  />
 	    </Navbar.Header>
 		<Navbar.Collapse>
-		  <Nav>
+		  <Nav pullRight>
 
 		   <NavItem id='navLinkTextfirst' eventKey={1} href="#" 
 		   			onClick={e => browserHistory.push('home')} 
 		   >
-		      HOME
+		      home
 		   </NavItem>
 
 		   <NavItem id='navLinkTextSecond' eventKey={2} href="#" 
-		   			onClick={e => browserHistory.push('rainHarvest')} 
+		   			onClick={e => browserHistory.push('reservations')} 
 		   >
-		      RAIN HARVESTING
+		      reservations
 		   </NavItem>		   
 		   
 		   <NavItem id='navLinkText' eventKey={3} href="#"
-		   			onClick={e => browserHistory.push('remodeling')}
+		   			onClick={e => browserHistory.push('gallery')}
 		   >
-		      REMODELING
+		      gallery
 		   </NavItem>
 		   <NavItem id='navLinkText' eventKey={4} href="#"
-					onClick={e => browserHistory.push('landscaping')}
+					onClick={e => browserHistory.push('contact')}
 		   >
-		      LANDSCAPING
+		      contact
 		   </NavItem>
 		   <NavItem id='navLinkText' eventKey={5} href="#"
-		   			onClick={e => browserHistory.push('contact')}
+		   			onClick={e => browserHistory.push('faq')}
 		   >
-		      CONTACT
+		      faq
 		   </NavItem>
 		  </Nav>
 
