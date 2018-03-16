@@ -62,6 +62,17 @@
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
+/******/ 	// webpack-livereload-plugin
+/******/ 	(function() {
+/******/ 	  if (typeof window === "undefined") { return };
+/******/ 	  var id = "webpack-livereload-plugin-script";
+/******/ 	  if (document.getElementById(id)) { return; }
+/******/ 	  var el = document.createElement("script");
+/******/ 	  el.id = id;
+/******/ 	  el.async = true;
+/******/ 	  el.src = "http://localhost:35729/livereload.js";
+/******/ 	  document.getElementsByTagName("head")[0].appendChild(el);
+/******/ 	}());
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 479);
 /******/ })
@@ -26569,28 +26580,28 @@ var Reservation = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { id: 'pageContainer' },
+        { id: 'reserveCanvas' },
+        _react2.default.createElement(
+          'h1',
+          { id: 'rainHarvestTitle' },
+          'Reservations'
+        ),
+        _react2.default.createElement(
+          'h3',
+          { id: 'harvestText' },
+          'Under Construction. ',
+          _react2.default.createElement('br', null),
+          'Open April 20, 2018. ',
+          _react2.default.createElement('br', null),
+          'Call 310-849-9353 to Reserve.'
+        ),
         _react2.default.createElement(
           'div',
-          { id: 'harvestCanvas' },
+          { className: 'cont' },
           _react2.default.createElement(
-            'h1',
-            { id: 'rainHarvestTitle' },
-            'Reservations'
-          ),
-          _react2.default.createElement(
-            'h3',
-            { id: 'harvestText' },
-            'Under Construction.'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'cont' },
-            _react2.default.createElement(
-              'p',
-              { className: 'threeStars' },
-              '\u2728'
-            )
+            'p',
+            { className: 'threeStars' },
+            '\u2728'
           )
         )
       );
@@ -30794,14 +30805,16 @@ var Home = function (_Component) {
         { id: 'homeCanvas' },
         _react2.default.createElement(
           _reactResponsiveCarousel.Carousel,
-          { showArrows: true, showThumbs: false, autoPlay: true, interval: 14000, infiniteLoop: true },
+          { showArrows: true, showThumbs: false,
+            autoPlay: true, interval: 6000,
+            infiniteLoop: true },
           _react2.default.createElement(
             'div',
             { id: 'tripCont' },
             _react2.default.createElement('img', { src: '/images/tripleWide.jpg' }),
             _react2.default.createElement(
               'div',
-              { className: 'legendOverRide', id: 'pic1leg' },
+              { id: 'pic1leg' },
               _react2.default.createElement(
                 'p',
                 { id: 'leg1Text' },
@@ -30814,7 +30827,7 @@ var Home = function (_Component) {
                 _react2.default.createElement('br', null),
                 ' No skill required.',
                 _react2.default.createElement('br', null),
-                'Take off and gently land directly on the boat.'
+                'Take off and gently land straight on the boat.'
               ),
               _react2.default.createElement(
                 'div',
@@ -30832,21 +30845,44 @@ var Home = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
-            _react2.default.createElement('img', { src: '/images/woodBackground.jpg' }),
+            _react2.default.createElement('img', { src: '/images/havasuParasail.jpg', id: 'pic2' }),
             _react2.default.createElement(
-              'p',
+              'div',
               { className: 'legend' },
-              'Legend 2'
+              _react2.default.createElement(
+                'p',
+                { id: 'leg2Text' },
+                'Cool down. Take in the Sights from Above.',
+                _react2.default.createElement('br', null),
+                'Relax. All Captains are USCG licensed.',
+                _react2.default.createElement('br', null),
+                '15 years in the Parasailing Industry. 100% Safety Record.'
+              )
             )
           ),
           _react2.default.createElement(
             'div',
             null,
-            _react2.default.createElement('img', { src: '/images/rockyMtnFarmHouse.jpg' }),
+            _react2.default.createElement('img', { src: '/images/havasuSunset.jpg', id: 'pic2' }),
             _react2.default.createElement(
-              'p',
+              'div',
               { className: 'legend' },
-              'Legend 3'
+              _react2.default.createElement(
+                'p',
+                { id: 'leg2Text' },
+                'We look forward to making this experience the highlight of your stay on Lake Havasu.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { id: 'bookingButton2', onClick: function onClick(e) {
+                    return _reactRouter.browserHistory.push('reservations');
+                  } },
+                _react2.default.createElement(
+                  'span',
+                  { id: 'bkTxt2' },
+                  ' BOOK NOW'
+                )
+              )
             )
           )
         ),
@@ -30856,7 +30892,7 @@ var Home = function (_Component) {
           _react2.default.createElement(
             'h1',
             { id: 'underCarText' },
-            'hey'
+            'Under Construction'
           )
         )
       );

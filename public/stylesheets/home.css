@@ -4,17 +4,20 @@
 	overflow-y: scroll;
 }
 
-.legendOverRide {
-	background-color: transparent !important;
-}
-
 #pic1leg {
 	position: fixed;
 	left: 5%;
 }
 
+.legend {
+	color: white !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+	margin-top: 70% !important;
+}
+
 .slide, .selected {
 	display: inline-block;
+	color: white
 }
 
 
@@ -24,6 +27,15 @@
   text-align: left;
   position: fixed;
   top: 20%;
+  font-weight: 999;
+  font-size:26px;
+}
+
+#leg2Text {
+  margin-top: 90px !important;
+  color: white;
+  font-size: 12px;
+  font-family: 'Expletus Sans', Bold;
   font-weight: 999;
 }
 
@@ -51,15 +63,59 @@
     margin-bottom: 5%;
 }
 
+#bookingButton2 {
+    z-index: 99999;
+    margin: 1% auto 0;
+    top: 33%;
+    padding: 6px 14px;
+    border: 1px solid black;
+    border-radius: 43px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-family: 'Expletus Sans', Bold;
+    z-index: 999999;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
 #bookingButton:hover {
 	color: #DB4C3F;
 	border-color: #DB4C3F;;
 	cursor: pointer;
 }
+#bookingButton2:hover {
+  background-color: black;
+  color: #DB4C3F;
+  border-color: #DB4C3F;;
+  cursor: pointer;
+}
 
 #bkText {
      font-size: 40px;
 }
+
+#bkTxt2 {
+     font-size: 30px;
+}
+
+.leg2 {
+	position: fixed;
+	top: 70%;
+	z-index: 9999;
+}
+
+#leg2 {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	left: 10%;
+}
+
+@media only screen and (min-width: 500px) {
+    #leg2Text {
+      font-size: 18px;
+    }
+}	
 
 @media only screen and (min-width: 768px) {
 
@@ -72,9 +128,17 @@
       color: white;
       font-family: 'Expletus Sans', Bold;
       text-align: left;
-      font-size: 29px;
+      font-size: 49px;
       top: 18%
      }
+
+     #leg2Text {
+      font-size: 23px;
+    }
+
+    #bkTxt2 {
+       font-size: 50px;
+    }
 
 	#leg1subText {
 	  color: white;
@@ -101,6 +165,10 @@
 
   #underCarText {
   	color: black;
+  }
+
+  #pic2 {
+  	height: 520px
   }
 
 
