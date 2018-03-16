@@ -32,7 +32,7 @@ export default class Home extends Component {
                     <img src="/images/goodAir.JPG" id='pic2'/>
                     <div className="legend">
                       <p id='leg2Text'>
-                          Cool down. Take in the Sights from Above. 
+                          Cool down. <br/>Take in the Sights from Above. 
                           <br/>Relax. All Captains are USCG licensed.
                           <br/>15 years in the Parasailing Industry. 100% Safety Record.
                       </p>

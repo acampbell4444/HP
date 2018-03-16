@@ -30848,7 +30848,9 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'p',
                 { id: 'leg2Text' },
-                'Cool down. Take in the Sights from Above.',
+                'Cool down. ',
+                _react2.default.createElement('br', null),
+                'Take in the Sights from Above.',
                 _react2.default.createElement('br', null),
                 'Relax. All Captains are USCG licensed.',
                 _react2.default.createElement('br', null),
