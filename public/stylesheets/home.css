@@ -12,7 +12,6 @@
 .legend {
 	color: white !important;
 	background-color: rgba(0, 0, 0, 0) !important;
-	margin-top: 70% !important;
 }
 
 .slide, .selected {
@@ -29,14 +28,24 @@
   top: 20%;
   font-weight: 999;
   font-size:26px;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 #leg2Text {
-  margin-top: 90px !important;
+
   color: white;
   font-size: 12px;
   font-family: 'Expletus Sans', Bold;
   font-weight: 999;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 #leg1subText {
@@ -46,6 +55,11 @@
   text-align: left;
   position: fixed;
   top: 58%;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 #bookingButton {
@@ -61,6 +75,11 @@
     font-family: 'Expletus Sans', Bold;
     z-index: 999999;
     margin-bottom: 5%;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 #bookingButton2 {
@@ -76,6 +95,11 @@
     z-index: 999999;
     margin-bottom: 5%;
     width: 50%;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 #bookingButton:hover {
@@ -92,15 +116,26 @@
 
 #bkText {
      font-size: 40px;
+     text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 #bkTxt2 {
      font-size: 30px;
+     text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    color:white;
 }
 
 .leg2 {
 	position: fixed;
-	top: 70%;
+	top: 50%;
 	z-index: 9999;
 }
 
@@ -168,7 +203,7 @@
   }
 
   #pic2 {
-  	height: 520px
+ 
   }
 
 

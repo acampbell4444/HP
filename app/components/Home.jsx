@@ -29,7 +29,7 @@ export default class Home extends Component {
                 </div>
                 
                 <div>
-                    <img src="/images/havasuParasail.jpg" id='pic2'/>
+                    <img src="/images/goodAir.JPG" id='pic2'/>
                     <div className="legend">
                       <p id='leg2Text'>
                           Cool down. Take in the Sights from Above. 

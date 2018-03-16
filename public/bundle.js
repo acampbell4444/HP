@@ -30845,7 +30845,7 @@ var Home = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
-            _react2.default.createElement('img', { src: '/images/havasuParasail.jpg', id: 'pic2' }),
+            _react2.default.createElement('img', { src: '/images/goodAir.JPG', id: 'pic2' }),
             _react2.default.createElement(
               'div',
               { className: 'legend' },
