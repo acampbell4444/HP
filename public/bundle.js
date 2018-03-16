@@ -30827,7 +30827,7 @@ var Home = function (_Component) {
                 _react2.default.createElement('br', null),
                 ' No skill required.',
                 _react2.default.createElement('br', null),
-                'Take off and gently land straight on the boat.'
+                'Take off and gently land sitting on the boat.'
               ),
               _react2.default.createElement(
                 'div',

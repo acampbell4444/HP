@@ -20,7 +20,7 @@ export default class Home extends Component {
                     <div id='pic1leg'>
                       <p id='leg1Text'>COME FLY WITH US!</p>
                       <p id='leg1subText'>Parasailing is safe, easy, and fun.<br/> No skill required. 
-                      <br/>Take off and gently land straight on the boat.</p>
+                      <br/>Take off and gently land sitting on the boat.</p>
                       
                       <div id='bookingButton' onClick={e => browserHistory.push('reservations')}>
                         <span id='bkTxt'> BOOK NOW</span>
