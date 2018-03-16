@@ -10,7 +10,7 @@
 
 #pic1leg {
 	position: fixed;
-	left: 15%;
+	left: 5%;
 }
 
 .slide, .selected {
@@ -24,6 +24,7 @@
   text-align: left;
   position: fixed;
   top: 20%;
+  font-weight: 999;
 }
 
 #leg1subText {
@@ -32,7 +33,7 @@
   font-family: 'Expletus Sans', Bold;
   text-align: left;
   position: fixed;
-  top: 65%;
+  top: 58%;
 }
 
 #bookingButton {
@@ -57,7 +58,7 @@
 }
 
 #bkText {
-     font-size: 52px;
+     font-size: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -80,6 +81,7 @@
 	  font-size: 21px;
 	  font-family: 'Expletus Sans', Bold;
 	  text-align: left;
+	  top: 64%;
 	}
 
 	#bookingButton {
