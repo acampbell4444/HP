@@ -2,18 +2,17 @@
    position:fixed;
    left:0px;
    bottom:0px;
-   height:50px;
+   height:30px;
    width:100%;
    background-color: black;
    text-align: center;
-   padding-top: 1%;
 }
 
 
 
 #footerText1, #footerText2, #dot {
   color:  white;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 900;
   text-shadow:
     -1px -1px 0 black,
@@ -30,8 +29,7 @@
 
 @media only screen and (min-width: 768px) {
 	#footer {
-		height: 50px;
-		padding-top: 0.5%;
+		height: 30px;
 	}
 
 	#footerText1, #footerText2, #dot {
