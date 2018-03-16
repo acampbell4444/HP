@@ -146,6 +146,18 @@
 	left: 10%;
 }
 
+#underCarText {
+  margin-top: 40px;
+    color: black;
+    text-align: center;
+    font-family: 'Expletus Sans', Bold;
+  }
+
+  .img-responsive {
+    max-height: 305px;
+    margin: 0 auto;
+  }
+
 @media only screen and (min-width: 500px) {
     #leg2Text {
       font-size: 18px;
@@ -198,15 +210,6 @@
   	margin-bottom: 200px;
   }
 
-  #underCarText {
-  	color: black;
-  }
-
-  #pic2 {
- 
-  }
-
-
 
 }
 
@@ -224,6 +227,16 @@
   	  font-size: 30px;
     }
 
+}
+
+.card {
+  margin: 30px;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 20px 12px -12px #777;
+     -moz-box-shadow: 0 20px 12px -12px #777;
+          box-shadow: 0 20px 12px -12px #777;
 }
 
 

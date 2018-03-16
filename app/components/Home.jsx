@@ -39,7 +39,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div>
-                    <img src="/images/havasuSunset.jpg" id='pic2'/>
+                    <img src="/images/londonBridgeWide.jpg" id='pic2'/>
                     <div className="legend">
                       <p id='leg2Text'>
                         We look forward to making this experience the highlight of your stay on Lake Havasu.
@@ -52,7 +52,78 @@ export default class Home extends Component {
 
             </Carousel>
             <div id='underCar'>
-              <h1 id='underCarText'>Under Construction</h1>
+              <h1 id='underCarText'>Our Trips</h1>
+
+              <div className="row">
+              <div className="col-sm-6">
+                <div className="card" >
+                  <img className="card-img-top img-responsive" src="/images/clearCouple.jpg" alt="Card image cap1"/>
+                  <div className="card-body">
+                    <h2 className="card-title">600' Flight</h2>
+                    <p className="card-text">Soar high above Lake Havasu with our introductory flight.</p>
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">6 Passengers Max.</li>
+                    <li className="list-group-item">Take off and land on boat.</li>
+                    <li className="list-group-item">$60 per person.</li>
+                  </ul>
+                  <div className="card-body">
+                    <a href="tel:310-849-9353" className="card-link">Call to Book.</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                  <div className="card" >
+                    <img className="card-img-top img-responsive" src="/images/inAirMaui.jpg" alt="Card image cap2"/>
+                    <div className="card-body">
+                      <h2 className="card-title">800' Flight</h2>
+                      <p className="card-text">If you're gonna go- maybe you should go big. 200' higher!</p>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">6 Passengers Max.</li>
+                      <li className="list-group-item">Up to 3 in air at same time.</li>
+                      <li className="list-group-item">$70 per person.</li>
+                    </ul>
+                    <div className="card-body">
+                      <a href="tel:310-849-9353" className="card-link">Call to Book.</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+                          <div className="row">
+              <div className="col-sm-6">
+                <div className="card" >
+                  <img className="card-img-top img-responsive" src="/images/bora.JPG" alt="Card image cap1"/>
+                  <div className="card-body">
+                    <h2 className="card-title">Photo Package</h2>
+                    <p className="card-text">We'll take all the pictures from the boat.</p>
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">Share with your whole group.</li>
+                    <li className="list-group-item">You get the photos on a high-quality SD card.</li>
+                    <li className="list-group-item">$30 total.</li>
+                  </ul>
+
+                </div>
+              </div>
+              <div className="col-sm-6">
+                  <div className="card" >
+                    <img className="card-img-top img-responsive" src="/images/dip.jpg" alt="Card image cap2"/>
+                    <div className="card-body">
+                      <h2 className="card-title">GoPro Package</h2>
+                      <p className="card-text">You will take our GoPro up in the air with you.</p>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">Share with your whole group.</li>
+                      <li className="list-group-item">You get the footage on a high-quality SD card.</li>
+                      <li className="list-group-item">$30 total.</li>
+                    </ul>
+
+                  </div>
+                </div>
+            </div>
+
             </div>
 
 

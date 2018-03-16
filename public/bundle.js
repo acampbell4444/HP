@@ -26233,7 +26233,6 @@ var Contact = function (_Component) {
   _createClass(Contact, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      document.body.style.backgroundImage = "url('images/woodBackground.jpg')";
       window.scrollTo(0, 0);
     }
   }, {
@@ -26311,7 +26310,6 @@ var FAQ = function (_Component) {
   _createClass(FAQ, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      document.body.style.backgroundImage = "url('images/woodBackground.jpg')";
       window.scrollTo(0, 0);
     }
   }, {
@@ -26572,7 +26570,6 @@ var Reservation = function (_Component) {
   _createClass(Reservation, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      document.body.style.backgroundImage = "url('images/woodBackground.jpg')";
       window.scrollTo(0, 0);
     }
   }, {
@@ -26583,12 +26580,12 @@ var Reservation = function (_Component) {
         { id: 'reserveCanvas' },
         _react2.default.createElement(
           'h1',
-          { id: 'rainHarvestTitle' },
+          { id: 'resText' },
           'Reservations'
         ),
         _react2.default.createElement(
           'h3',
-          { id: 'harvestText' },
+          { id: 'resText' },
           'Under Construction. ',
           _react2.default.createElement('br', null),
           'Open April 20, 2018. ',
@@ -30722,7 +30719,6 @@ var Gallery = function (_Component) {
   _createClass(Gallery, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      document.body.style.backgroundImage = "url('images/woodBackground.jpg')";
       window.scrollTo(0, 0);
     }
   }, {
@@ -30863,7 +30859,7 @@ var Home = function (_Component) {
           _react2.default.createElement(
             'div',
             null,
-            _react2.default.createElement('img', { src: '/images/havasuSunset.jpg', id: 'pic2' }),
+            _react2.default.createElement('img', { src: '/images/londonBridgeWide.jpg', id: 'pic2' }),
             _react2.default.createElement(
               'div',
               { className: 'legend' },
@@ -30892,7 +30888,201 @@ var Home = function (_Component) {
           _react2.default.createElement(
             'h1',
             { id: 'underCarText' },
-            'Under Construction'
+            'Our Trips'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-sm-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'card' },
+                _react2.default.createElement('img', { className: 'card-img-top img-responsive', src: '/images/clearCouple.jpg', alt: 'Card image cap1' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'card-body' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'card-title' },
+                    '600\' Flight'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'card-text' },
+                    'Soar high above Lake Havasu with our introductory flight.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'list-group list-group-flush' },
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    '6 Passengers Max.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    'Take off and land on boat.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    '$60 per person.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'card-body' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'tel:310-849-9353', className: 'card-link' },
+                    'Call to Book.'
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-sm-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'card' },
+                _react2.default.createElement('img', { className: 'card-img-top img-responsive', src: '/images/inAirMaui.jpg', alt: 'Card image cap2' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'card-body' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'card-title' },
+                    '800\' Flight'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'card-text' },
+                    'If you\'re gonna go- maybe you should go big. 200\' higher!'
+                  )
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'list-group list-group-flush' },
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    '6 Passengers Max.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    'Up to 3 in air at same time.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    '$70 per person.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'card-body' },
+                  _react2.default.createElement(
+                    'a',
+                    { href: 'tel:310-849-9353', className: 'card-link' },
+                    'Call to Book.'
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-sm-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'card' },
+                _react2.default.createElement('img', { className: 'card-img-top img-responsive', src: '/images/bora.JPG', alt: 'Card image cap1' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'card-body' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'card-title' },
+                    'Photo Package'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'card-text' },
+                    'We\'ll take all the pictures from the boat.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'list-group list-group-flush' },
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    'Share with your whole group.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    'You get the photos on a high-quality SD card.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    '$30 total.'
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-sm-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'card' },
+                _react2.default.createElement('img', { className: 'card-img-top img-responsive', src: '/images/dip.jpg', alt: 'Card image cap2' }),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'card-body' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'card-title' },
+                    'GoPro Package'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'card-text' },
+                    'You will take our GoPro up in the air with you.'
+                  )
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'list-group list-group-flush' },
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    'Share with your whole group.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    'You get the footage on a high-quality SD card.'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    '$30 total.'
+                  )
+                )
+              )
+            )
           )
         )
       );

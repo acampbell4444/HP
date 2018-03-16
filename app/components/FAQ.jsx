@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export default class FAQ extends Component {
   
   componentDidMount() {
-    document.body.style.backgroundImage = "url('images/woodBackground.jpg')"
   	window.scrollTo(0, 0)
   }
 

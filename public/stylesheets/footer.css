@@ -1,33 +1,19 @@
 #footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 23px;
-    width: 100%;
-    color: white;
-    text-align: center;
-/*    background :url('../images/pile-of-stones.jpg') no-repeat center center;
-*/    
-    background-color: black;
-    background-size: 100% 100%;
-    z-index: 99999;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   background-color: black;
+   text-align: center;
+   padding-top: 1%;
 }
 
-#footer:before {
-    content:"";
-    display:block;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:-1;
-    background-color: rgba(255, 255, 255, 0.3);
-}
+
 
 #footerText1, #footerText2, #dot {
   color:  white;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 900;
   text-shadow:
     -1px -1px 0 black,
@@ -49,7 +35,7 @@
 	}
 
 	#footerText1, #footerText2, #dot {
-      font-size: 26px;
+      font-size: 22px;
     }
 
 }
