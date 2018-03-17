@@ -1,6 +1,5 @@
 #galleryCanvas {
-	margin: 3%;
-	padding: 0 3%;
+	padding: 0 auto;
 	margin-bottom: 800px;
 }
 
@@ -18,6 +17,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  #galleryCanvas {
+	padding: 0 3%;
+}  
+
   #galleryTitle {
     font-size: 52px;
     margin-top: 220px;
