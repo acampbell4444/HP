@@ -68,6 +68,7 @@
     "react": "^15.6.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^15.6.2",
+    "react-grid-gallery": "^0.4.8",
     "react-html5video": "^2.5.1",
     "react-icons-kit": "^1.0.7",
     "react-redux": "^4.4.5",

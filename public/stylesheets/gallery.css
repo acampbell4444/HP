@@ -1,0 +1,25 @@
+#galleryCanvas {
+	margin: 3%;
+	padding: 0 3%;
+	margin-bottom: 800px;
+}
+
+#afterGallery {
+	margin: 200px;
+}
+
+#galleryTitle {
+	margin-top: 170px;
+	margin-bottom: 50px;
+	text-align: center;
+    font-family: 'Expletus Sans', Bold;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  #galleryTitle {
+    font-size: 52px;
+    margin-top: 220px;
+  }
+}

@@ -2,6 +2,7 @@
 	margin-top: 100px;
 	color: black;
 	overflow-y: scroll;
+  margin-bottom: 200px;
 }
 
 #pic1leg {
@@ -151,6 +152,8 @@
     color: black;
     text-align: center;
     font-family: 'Expletus Sans', Bold;
+    font-weight: 900;
+    font-size: 40px;
   }
 
   .img-responsive {
@@ -208,6 +211,10 @@
   #underCar {
   	color: black;
   	margin-bottom: 200px;
+  }
+
+  #underCarText {
+    font-size: 52px;
   }
 
 

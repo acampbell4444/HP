@@ -91,7 +91,7 @@ export default class Home extends Component {
                 </div>
             </div>
 
-                          <div className="row">
+             <div className="row">
               <div className="col-sm-6">
                 <div className="card" >
                   <img className="card-img-top img-responsive" src="/images/bora.JPG" alt="Card image cap1"/>
