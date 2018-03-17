@@ -35,7 +35,7 @@ export default class NavBar extends Component {
 			</NavItem>
 			</div>
 		  </Navbar.Brand>
-		  <Navbar.Toggle id='toggleNav' onClick={e => console.log('pushed')} 
+		  <Navbar.Toggle id='toggleNav'
 		  				 ref='toggleDiv'
 
 		  />
