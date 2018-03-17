@@ -102,6 +102,6 @@ const IMAGES =
         thumbnailWidth: 140,
         thumbnailHeight: 174,
         tags: [{value: 'Smiles Happen'}],
-        caption: "Kids love parasailing. This happy soul just happens to be the captain's daughter when she was a bit younger."
+        caption: "Kids love parasailing. Kids 4 and over are welcome to fly with a legal guardian."
 },
 ]

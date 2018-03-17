@@ -27635,28 +27635,42 @@ var FAQ = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { id: 'pageContainer' },
+        { id: 'reserveCanvas' },
+        _react2.default.createElement(
+          'h1',
+          { id: 'resText' },
+          'FAQ\'s'
+        ),
+        _react2.default.createElement(
+          'h3',
+          { id: 't1' },
+          'Under Construction.'
+        ),
+        _react2.default.createElement(
+          'h3',
+          { id: 't2' },
+          'Open April 20, 2018. '
+        ),
+        _react2.default.createElement(
+          'h3',
+          { id: 't3' },
+          'Call',
+          _react2.default.createElement(
+            'a',
+            { href: 'tel:310-849-9353' },
+            ' (310) 849-9353',
+            _react2.default.createElement('br', null),
+            ' '
+          ),
+          ' to Reserve.'
+        ),
         _react2.default.createElement(
           'div',
-          { id: 'harvestCanvas' },
+          { className: 'cont' },
           _react2.default.createElement(
-            'h1',
-            { id: 'rainHarvestTitle' },
-            'FAQ'
-          ),
-          _react2.default.createElement(
-            'h3',
-            { id: 'remodelingText' },
-            'Under Construction'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'cont' },
-            _react2.default.createElement(
-              'p',
-              { className: 'threeStars' },
-              '\u2728'
-            )
+            'p',
+            { className: 'threeStars' },
+            '\u2728'
           )
         )
       );
@@ -27903,12 +27917,26 @@ var Reservation = function (_Component) {
         ),
         _react2.default.createElement(
           'h3',
-          { id: 'resText' },
-          'Under Construction. ',
-          _react2.default.createElement('br', null),
-          'Open April 20, 2018. ',
-          _react2.default.createElement('br', null),
-          'Call 310-849-9353 to Reserve.'
+          { id: 't1' },
+          'Under Construction.'
+        ),
+        _react2.default.createElement(
+          'h3',
+          { id: 't2' },
+          'Open April 20, 2018. '
+        ),
+        _react2.default.createElement(
+          'h3',
+          { id: 't3' },
+          'Call',
+          _react2.default.createElement(
+            'a',
+            { href: 'tel:310-849-9353' },
+            ' (310) 849-9353',
+            _react2.default.createElement('br', null),
+            ' '
+          ),
+          ' to Reserve.'
         ),
         _react2.default.createElement(
           'div',
@@ -28058,10 +28086,12 @@ var _reactRedux = __webpack_require__(73);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
+  var currentRoute = state.navBar.currentRoute;
   var user = ownProps.user;
   //const currentComponent = state.auth.currentComponent
   return {
-    user: user
+    user: user,
+    currentRoute: currentRoute
     //currentComponent
   };
 };
@@ -32689,7 +32719,7 @@ var IMAGES = [{
         thumbnailWidth: 140,
         thumbnailHeight: 174,
         tags: [{ value: 'Smiles Happen' }],
-        caption: "Kids love parasailing. This happy soul just happens to be the captain's daughter when she was a bit younger."
+        caption: "Kids love parasailing. Kids 4 and over are welcome to fly with a legal guardian."
 }];
 
 /***/ }),
@@ -32734,6 +32764,7 @@ var Home = function (_Component) {
     key: 'componentDidMount',
     value: function componentDidMount() {
       window.scrollTo(0, 0);
+      this.setState({});
     }
   }, {
     key: 'render',
@@ -33099,6 +33130,7 @@ var NavBar = function (_Component) {
 		value: function render() {
 			var _this2 = this;
 
+			var rte = this.props.currentRoute;
 			return _react2.default.createElement(
 				'div',
 				null,
@@ -33160,7 +33192,11 @@ var NavBar = function (_Component) {
 										return _reactRouter.browserHistory.push('home');
 									}
 								},
-								'home'
+								_react2.default.createElement(
+									'span',
+									{ style: { color: rte == 'home' ? 'white' : '#9D9D9D' } },
+									' home '
+								)
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
@@ -33169,7 +33205,11 @@ var NavBar = function (_Component) {
 										return _reactRouter.browserHistory.push('reservations');
 									}
 								},
-								'reservations'
+								_react2.default.createElement(
+									'span',
+									{ style: { color: rte == 'reservations' ? 'white' : '#9D9D9D' } },
+									' reservations '
+								)
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
@@ -33178,16 +33218,11 @@ var NavBar = function (_Component) {
 										return _reactRouter.browserHistory.push('gallery');
 									}
 								},
-								'gallery'
-							),
-							_react2.default.createElement(
-								_reactBootstrap.NavItem,
-								{ id: 'navLinkText', eventKey: 4, href: '#',
-									onClick: function onClick(e) {
-										return _reactRouter.browserHistory.push('contact');
-									}
-								},
-								'contact'
+								_react2.default.createElement(
+									'span',
+									{ style: { color: rte == 'gallery' ? 'white' : '#9D9D9D' } },
+									' gallery '
+								)
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
@@ -33196,7 +33231,11 @@ var NavBar = function (_Component) {
 										return _reactRouter.browserHistory.push('faq');
 									}
 								},
-								'faq'
+								_react2.default.createElement(
+									'span',
+									{ style: { color: rte == 'FAQ' ? 'white' : '#9D9D9D' } },
+									' faq '
+								)
 							)
 						)
 					),
@@ -33504,6 +33543,8 @@ var _Footer = __webpack_require__(370);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _navBar = __webpack_require__(880);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var GatorBacked = (0, _reactRedux.connect)(function (_ref) {
@@ -33521,6 +33562,22 @@ var GatorBacked = (0, _reactRedux.connect)(function (_ref) {
   );
 });
 
+var onHomeEnter = function onHomeEnter() {
+  return _store2.default.dispatch((0, _navBar.updateCurrentRoute)('home'));
+};
+var onReservationsEnter = function onReservationsEnter() {
+  return _store2.default.dispatch((0, _navBar.updateCurrentRoute)('reservations'));
+};
+var onGalleryEnter = function onGalleryEnter() {
+  return _store2.default.dispatch((0, _navBar.updateCurrentRoute)('gallery'));
+};
+var onContactEnter = function onContactEnter() {
+  return _store2.default.dispatch((0, _navBar.updateCurrentRoute)('contact'));
+};
+var onFAQEnter = function onFAQEnter() {
+  return _store2.default.dispatch((0, _navBar.updateCurrentRoute)('FAQ'));
+};
+
 (0, _reactDom.render)(_react2.default.createElement(
   _reactRedux.Provider,
   { store: _store2.default },
@@ -33531,11 +33588,11 @@ var GatorBacked = (0, _reactRedux.connect)(function (_ref) {
       _reactRouter.Route,
       { path: '/', component: GatorBacked },
       _react2.default.createElement(_reactRouter.IndexRedirect, { to: '/home' }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _homeContainer2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/reservations', component: _Reservation2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: _galleryContainer2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default }),
-      _react2.default.createElement(_reactRouter.Route, { path: '/faq', component: _FAQ2.default })
+      _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _homeContainer2.default, onEnter: onHomeEnter }),
+      _react2.default.createElement(_reactRouter.Route, { path: '/reservations', component: _Reservation2.default, onEnter: onReservationsEnter }),
+      _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: _galleryContainer2.default, onEnter: onGalleryEnter }),
+      _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default, onEnter: onContactEnter }),
+      _react2.default.createElement(_reactRouter.Route, { path: '/faq', component: _FAQ2.default, onEnter: onFAQEnter })
     ),
     _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFound2.default })
   )
@@ -33555,7 +33612,8 @@ Object.defineProperty(exports, "__esModule", {
 var _redux = __webpack_require__(150);
 
 var rootReducer = (0, _redux.combineReducers)({
-  auth: __webpack_require__(120).default
+  auth: __webpack_require__(120).default,
+  navBar: __webpack_require__(880).default
 });
 
 exports.default = rootReducer;
@@ -66556,6 +66614,47 @@ module.exports = function(originalModule) {
 	return module;
 };
 
+
+/***/ }),
+/* 880 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//import axios from 'axios'
+
+var initState = {
+  currentRoute: 'home'
+};
+
+var reducer = function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initState;
+  var action = arguments[1];
+
+  var newState = Object.assign({}, state);
+
+  switch (action.type) {
+    case UPDATE_CURRENT_ROUTE:
+      newState.currentRoute = action.route;
+      break;
+
+    default:
+      return state;
+  }
+  return newState;
+};
+
+var UPDATE_CURRENT_ROUTE = 'UPDATE_CURRENT_ROUTE';
+
+var updateCurrentRoute = exports.updateCurrentRoute = function updateCurrentRoute(route) {
+  return { type: UPDATE_CURRENT_ROUTE, route: route };
+};
+
+exports.default = reducer;
 
 /***/ })
 /******/ ]);
