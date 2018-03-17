@@ -6,13 +6,14 @@
    width:100%;
    background-color: black;
    text-align: center;
+   padding-top: 0.5%;
 }
 
 
 
 #footerText1, #footerText2, #dot {
   color:  white;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 900;
   text-shadow:
     -1px -1px 0 black,
