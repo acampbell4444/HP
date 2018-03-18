@@ -9,7 +9,7 @@ import { instagram } from 'react-icons-kit/icomoon/instagram'
 
 export default class NavBar extends Component {
 
-  state = {toggleNav:false}
+  state = {toggleNav:false, redLogo: false}
 
   render() {
   	const rte = this.props.currentRoute
@@ -29,9 +29,16 @@ export default class NavBar extends Component {
 
 			>   
 			    <div id='navBarLogo'>
-				<Image src="images/parasailLogo.png" rounded responsive id='logopic' />
+				<Image src={rte === 'home' || this.state.redLogo ? 'images/parasailLogoRed.png' : 'images/parasailLogo.png' }
+				 onMouseEnter={e => this.setState({redLogo:true})}
+				 onMouseLeave={e => this.setState({redLogo:false})}
+				 rounded responsive id='logopic' />
 				</div>
-				<p id='bizName'>Havasu Parasail</p>
+				<p id='bizName' 
+ 					onMouseEnter={e => this.setState({redLogo:true})}
+				    onMouseLeave={e => this.setState({redLogo:false})}
+				   style={{'color': this.state.redLogo || rte === 'home'? '#DB4C3F' : 'white'}}>Havasu Parasail
+				 </p>
 			</NavItem>
 			</div>
 		  </Navbar.Brand>
@@ -46,19 +53,19 @@ export default class NavBar extends Component {
 		   <NavItem eventKey={1} href="#" 
 		   			onClick={e => browserHistory.push('home')} 
 		   >
-		     <span id='navLinkTextfirst' style={{color: rte == 'home' ? 'white' : '#9D9D9D'}}> home </span>
+		     <span id='navLinkTextfirst' style={{color: rte == 'home' ? '#DB4C3F' : 'white'}}> home </span>
 		   </NavItem>
 
 		   <NavItem eventKey={2} href="#" 
 		   			onClick={e => browserHistory.push('reservations')} 
 		   >
-		      <span id='navLinkTextSecond' style={{color: rte == 'reservations' ? 'white' : '#9D9D9D'}}> reservations </span>
+		      <span id='navLinkTextSecond' style={{color: rte == 'reservations' ? '#DB4C3F' : 'white'}}> reservations </span>
 		   </NavItem>		   
 		   
 		   <NavItem eventKey={3} href="#"
 		   			onClick={e => browserHistory.push('gallery')}
 		   >
-		      <span id='navLinkText'style={{color: rte == 'gallery' ? 'white' : '#9D9D9D'}}> gallery </span>
+		      <span id='navLinkText'style={{color: rte == 'gallery' ? '#DB4C3F' : 'white'}}> gallery </span>
 		   </NavItem>
 {/*		   <NavItem id='navLinkText' eventKey={4} href="#"
 					onClick={e => browserHistory.push('contact')}
@@ -68,7 +75,7 @@ export default class NavBar extends Component {
 		   <NavItem eventKey={5} href="#"
 		   			onClick={e => browserHistory.push('faq')}
 		   >
-		      <span id='navLinkText' style={{color: rte == 'FAQ' ? 'white' : '#9D9D9D'}}> faq </span>
+		      <span id='navLinkText' style={{color: rte == 'FAQ' ? '#DB4C3F' : 'white'}}> faq </span>
 		   </NavItem>
 		  </Nav>
 

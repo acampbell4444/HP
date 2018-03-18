@@ -33163,7 +33163,7 @@ var NavBar = function (_Component) {
 			args[_key] = arguments[_key];
 		}
 
-		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NavBar.__proto__ || Object.getPrototypeOf(NavBar)).call.apply(_ref, [this].concat(args))), _this), _this.state = { toggleNav: false }, _temp), _possibleConstructorReturn(_this, _ret);
+		return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NavBar.__proto__ || Object.getPrototypeOf(NavBar)).call.apply(_ref, [this].concat(args))), _this), _this.state = { toggleNav: false, redLogo: false }, _temp), _possibleConstructorReturn(_this, _ret);
 	}
 
 	_createClass(NavBar, [{
@@ -33203,11 +33203,25 @@ var NavBar = function (_Component) {
 									_react2.default.createElement(
 										'div',
 										{ id: 'navBarLogo' },
-										_react2.default.createElement(_reactBootstrap.Image, { src: 'images/parasailLogo.png', rounded: true, responsive: true, id: 'logopic' })
+										_react2.default.createElement(_reactBootstrap.Image, { src: rte === 'home' || this.state.redLogo ? 'images/parasailLogoRed.png' : 'images/parasailLogo.png',
+											onMouseEnter: function onMouseEnter(e) {
+												return _this2.setState({ redLogo: true });
+											},
+											onMouseLeave: function onMouseLeave(e) {
+												return _this2.setState({ redLogo: false });
+											},
+											rounded: true, responsive: true, id: 'logopic' })
 									),
 									_react2.default.createElement(
 										'p',
-										{ id: 'bizName' },
+										{ id: 'bizName',
+											onMouseEnter: function onMouseEnter(e) {
+												return _this2.setState({ redLogo: true });
+											},
+											onMouseLeave: function onMouseLeave(e) {
+												return _this2.setState({ redLogo: false });
+											},
+											style: { 'color': this.state.redLogo || rte === 'home' ? '#DB4C3F' : 'white' } },
 										'Havasu Parasail'
 									)
 								)
@@ -33233,7 +33247,7 @@ var NavBar = function (_Component) {
 								},
 								_react2.default.createElement(
 									'span',
-									{ id: 'navLinkTextfirst', style: { color: rte == 'home' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkTextfirst', style: { color: rte == 'home' ? '#DB4C3F' : 'white' } },
 									' home '
 								)
 							),
@@ -33246,7 +33260,7 @@ var NavBar = function (_Component) {
 								},
 								_react2.default.createElement(
 									'span',
-									{ id: 'navLinkTextSecond', style: { color: rte == 'reservations' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkTextSecond', style: { color: rte == 'reservations' ? '#DB4C3F' : 'white' } },
 									' reservations '
 								)
 							),
@@ -33259,7 +33273,7 @@ var NavBar = function (_Component) {
 								},
 								_react2.default.createElement(
 									'span',
-									{ id: 'navLinkText', style: { color: rte == 'gallery' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkText', style: { color: rte == 'gallery' ? '#DB4C3F' : 'white' } },
 									' gallery '
 								)
 							),
@@ -33272,7 +33286,7 @@ var NavBar = function (_Component) {
 								},
 								_react2.default.createElement(
 									'span',
-									{ id: 'navLinkText', style: { color: rte == 'FAQ' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkText', style: { color: rte == 'FAQ' ? '#DB4C3F' : 'white' } },
 									' faq '
 								)
 							)
