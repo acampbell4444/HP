@@ -43,32 +43,32 @@ export default class NavBar extends Component {
 		<Navbar.Collapse>
 		  <Nav pullRight>
 
-		   <NavItem id='navLinkTextfirst' eventKey={1} href="#" 
+		   <NavItem eventKey={1} href="#" 
 		   			onClick={e => browserHistory.push('home')} 
 		   >
-		     <span style={{color: rte == 'home' ? 'white' : '#9D9D9D'}}> home </span>
+		     <span id='navLinkTextfirst' style={{color: rte == 'home' ? 'white' : '#9D9D9D'}}> home </span>
 		   </NavItem>
 
-		   <NavItem id='navLinkTextSecond' eventKey={2} href="#" 
+		   <NavItem eventKey={2} href="#" 
 		   			onClick={e => browserHistory.push('reservations')} 
 		   >
-		      <span style={{color: rte == 'reservations' ? 'white' : '#9D9D9D'}}> reservations </span>
+		      <span id='navLinkTextSecond' style={{color: rte == 'reservations' ? 'white' : '#9D9D9D'}}> reservations </span>
 		   </NavItem>		   
 		   
-		   <NavItem id='navLinkText' eventKey={3} href="#"
+		   <NavItem eventKey={3} href="#"
 		   			onClick={e => browserHistory.push('gallery')}
 		   >
-		      <span style={{color: rte == 'gallery' ? 'white' : '#9D9D9D'}}> gallery </span>
+		      <span id='navLinkText'style={{color: rte == 'gallery' ? 'white' : '#9D9D9D'}}> gallery </span>
 		   </NavItem>
 {/*		   <NavItem id='navLinkText' eventKey={4} href="#"
 					onClick={e => browserHistory.push('contact')}
 		   >
 		      contact
 		   </NavItem>*/}
-		   <NavItem id='navLinkText' eventKey={5} href="#"
+		   <NavItem eventKey={5} href="#"
 		   			onClick={e => browserHistory.push('faq')}
 		   >
-		      <span style={{color: rte == 'FAQ' ? 'white' : '#9D9D9D'}}> faq </span>
+		      <span id='navLinkText' style={{color: rte == 'FAQ' ? 'white' : '#9D9D9D'}}> faq </span>
 		   </NavItem>
 		  </Nav>
 

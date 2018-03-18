@@ -33226,53 +33226,53 @@ var NavBar = function (_Component) {
 							{ pullRight: true },
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
-								{ id: 'navLinkTextfirst', eventKey: 1, href: '#',
+								{ eventKey: 1, href: '#',
 									onClick: function onClick(e) {
 										return _reactRouter.browserHistory.push('home');
 									}
 								},
 								_react2.default.createElement(
 									'span',
-									{ style: { color: rte == 'home' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkTextfirst', style: { color: rte == 'home' ? 'white' : '#9D9D9D' } },
 									' home '
 								)
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
-								{ id: 'navLinkTextSecond', eventKey: 2, href: '#',
+								{ eventKey: 2, href: '#',
 									onClick: function onClick(e) {
 										return _reactRouter.browserHistory.push('reservations');
 									}
 								},
 								_react2.default.createElement(
 									'span',
-									{ style: { color: rte == 'reservations' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkTextSecond', style: { color: rte == 'reservations' ? 'white' : '#9D9D9D' } },
 									' reservations '
 								)
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
-								{ id: 'navLinkText', eventKey: 3, href: '#',
+								{ eventKey: 3, href: '#',
 									onClick: function onClick(e) {
 										return _reactRouter.browserHistory.push('gallery');
 									}
 								},
 								_react2.default.createElement(
 									'span',
-									{ style: { color: rte == 'gallery' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkText', style: { color: rte == 'gallery' ? 'white' : '#9D9D9D' } },
 									' gallery '
 								)
 							),
 							_react2.default.createElement(
 								_reactBootstrap.NavItem,
-								{ id: 'navLinkText', eventKey: 5, href: '#',
+								{ eventKey: 5, href: '#',
 									onClick: function onClick(e) {
 										return _reactRouter.browserHistory.push('faq');
 									}
 								},
 								_react2.default.createElement(
 									'span',
-									{ style: { color: rte == 'FAQ' ? 'white' : '#9D9D9D' } },
+									{ id: 'navLinkText', style: { color: rte == 'FAQ' ? 'white' : '#9D9D9D' } },
 									' faq '
 								)
 							)
