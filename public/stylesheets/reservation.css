@@ -16,7 +16,7 @@
   padding-right: 3%;
   width: 470px;
   height: 1400px;
-  overflow-x: hidden;
+  overflow-x: scroll;
 
 }
 
