@@ -3,6 +3,10 @@ import React, { Component } from 'react'
 export default class Reservation extends Component {
   
   componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  componentDidUpdate() {
   	window.scrollTo(0, 0)
   }
 
@@ -10,8 +14,10 @@ export default class Reservation extends Component {
     return (
       <div id='reserveCanvas'>
 
-            <iframe id="bookingcalendar" src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"
-             style={{'width': '100%', 'max-width': '800px', 'height': '1200px', 'border': '0', 'padding': '0', 'margin': '0'}} frameBorder="0"><a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a></iframe>
+          <h1 id='reservationTitle'>Reserve Online and get the 800' flight for $65!</h1>
+
+            <iframe className='flex' id="bookingcalendar" src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"
+             frameBorder="0"><a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a></iframe>
 
 
 

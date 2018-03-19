@@ -28133,15 +28133,25 @@ var Reservation = function (_Component) {
       window.scrollTo(0, 0);
     }
   }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      window.scrollTo(0, 0);
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
         { id: 'reserveCanvas' },
         _react2.default.createElement(
+          'h1',
+          { id: 'reservationTitle' },
+          'Reserve Online and get the 800\' flight for $65!'
+        ),
+        _react2.default.createElement(
           'iframe',
-          { id: 'bookingcalendar', src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css',
-            style: { 'width': '100%', 'max-width': '800px', 'height': '1200px', 'border': '0', 'padding': '0', 'margin': '0' }, frameBorder: '0' },
+          { className: 'flex', id: 'bookingcalendar', src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css',
+            frameBorder: '0' },
           _react2.default.createElement(
             'a',
             { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css' },
@@ -33115,7 +33125,7 @@ var Home = function (_Component) {
                   _react2.default.createElement(
                     'li',
                     { className: 'list-group-item' },
-                    '$60 per person.'
+                    '$65 per person.'
                   )
                 ),
                 _react2.default.createElement(
@@ -33166,7 +33176,7 @@ var Home = function (_Component) {
                   _react2.default.createElement(
                     'li',
                     { className: 'list-group-item' },
-                    '$70 per person.'
+                    '$75 per person.'
                   )
                 ),
                 _react2.default.createElement(
