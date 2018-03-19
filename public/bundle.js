@@ -28142,7 +28142,7 @@ var Reservation = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { id: 'reserveCanvas' },
+        { id: 'reserveCanvas', className: 'flex container' },
         _react2.default.createElement(
           'h1',
           { id: 'reservationTitle' },

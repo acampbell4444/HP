@@ -12,7 +12,7 @@ export default class Reservation extends Component {
 
   render() {
     return (
-      <div id='reserveCanvas' className'flex container'>
+      <div id='reserveCanvas' className='flex container'>
 
           <h1 id='reservationTitle'>Reserve Online and get the 800' flight for $65!</h1>
 
