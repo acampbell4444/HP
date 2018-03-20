@@ -1,4 +1,4 @@
-#reserveBody, body {
+body {
   -webkit-overflow-scrolling: touch !important;
   overflow-y: scroll !important;
   overflow-x: scroll !important;
@@ -26,18 +26,14 @@
   z-index: 99999999999;
   padding-bottom: 5%;
   margin: 0 auto;
-  overflow-y: scroll !important;
   overflow-x: scroll !important;
-  -webkit-overflow-scrolling: touch !important;
 }
 
 #reserveCanvas {
  margin-top: 150px;
  margin-left: 10px;
  margin-right: 10px;
- overflow-y: scroll !important;
-  overflow-x: scroll !important;
-  -webkit-overflow-scrolling: touch !important;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -48,7 +44,7 @@
 
   #reserveTitle {
     font-size: 52px;
-    margin-top: 220px;
+    margin-top: 200px;
   }
 }
 
