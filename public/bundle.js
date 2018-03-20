@@ -29934,8 +29934,8 @@ var Footer = function (_Component) {
             ),
             _react2.default.createElement(
               'a',
-              { id: 'footerText2', href: 'tel:310-849-9353' },
-              ' (310) 849-9353'
+              { id: 'footerText2', href: 'tel:928-575-5043' },
+              ' 928-575-5043'
             )
           )
         )

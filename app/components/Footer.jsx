@@ -12,7 +12,7 @@ export default class Footer extends Component {
            Havasu Parasail  
         </span> 
          <span id='dot'> • </span>
-         <a id='footerText2' href="tel:310-849-9353" > (310) 849-9353</a>
+         <a id='footerText2' href="tel:928-575-5043" > 928-575-5043</a>
         </p>
       </div>
     </div>
