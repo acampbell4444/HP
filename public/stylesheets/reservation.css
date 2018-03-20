@@ -8,6 +8,7 @@
   margin-top: 120px;
   overflow-y: scroll;
   overflow-x: scroll;
+   -webkit-overflow-scrolling: touch !important;
 }
 
 #bigCalendar {
@@ -49,6 +50,7 @@
   margin: 0 auto;
   overflow-y: scroll !important;
   overflow-x: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 svg {
