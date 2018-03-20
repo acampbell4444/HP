@@ -15,10 +15,12 @@ export default class Reservation extends Component {
       <div id='reserveCanvas' className='flex container'>
 
           <h1 id='reservationTitle'>Reserve Online and get the 800' flight for $65!</h1>
+          <div id='wrap'>
 
-            <iframe className='flex' id="bookingcalendar" src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"
+            <iframe id='frame'  src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"
              frameBorder="0"><a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a></iframe>
 
+          </div>
 
 
 

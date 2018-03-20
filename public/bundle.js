@@ -28149,13 +28149,17 @@ var Reservation = function (_Component) {
           'Reserve Online and get the 800\' flight for $65!'
         ),
         _react2.default.createElement(
-          'iframe',
-          { className: 'flex', id: 'bookingcalendar', src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css',
-            frameBorder: '0' },
+          'div',
+          { id: 'wrap' },
           _react2.default.createElement(
-            'a',
-            { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css' },
-            'Make Reservation'
+            'iframe',
+            { id: 'frame', src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css',
+              frameBorder: '0' },
+            _react2.default.createElement(
+              'a',
+              { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css' },
+              'Make Reservation'
+            )
           )
         ),
         _react2.default.createElement(
