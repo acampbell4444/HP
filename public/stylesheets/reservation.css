@@ -13,6 +13,20 @@
    margin-right: 5%;
 }
 
+
+
+.Modal-modal-0-1-3::-webkit-scrollbar {
+    width: 2em;
+}
+ 
+.Modal-modal-0-1-3::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.Modal-modal-0-1-3::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 3px solid slategrey;
+}
 #bigCalendar {
   margin: 0 auto;
   width: 100%;
