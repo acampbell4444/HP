@@ -5,6 +5,17 @@
   margin-bottom: 200px;
 }
 
+#resClick {
+  color: #364F84;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+#resClick:hover {
+  color: green;
+  cursor: pointer;
+}
+
 #pic1leg {
 	position: fixed;
 	left: 5%;

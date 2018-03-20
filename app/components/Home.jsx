@@ -69,7 +69,7 @@ export default class Home extends Component {
                     <li className="list-group-item">$65 per person.</li>
                   </ul>
                   <div className="card-body">
-                    <a href="tel:310-849-9353" className="card-link">Call to Book.</a>
+                    <p id='resClick' onClick={e => browserHistory.push('reservations')} className="card-link">Click to Book Online.</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default class Home extends Component {
                       <li className="list-group-item">$75 per person.</li>
                     </ul>
                     <div className="card-body">
-                      <a href="tel:310-849-9353" className="card-link">Call to Book.</a>
+                      <p id='resClick' onClick={e => browserHistory.push('reservations')} className="card-link">Click to Book Online.</p>
                     </div>
                   </div>
                 </div>

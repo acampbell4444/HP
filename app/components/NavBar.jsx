@@ -89,7 +89,7 @@ export default class NavBar extends Component {
                 <Icon size={30} icon={facebook}></Icon>
 		      </Button>
 		      
-		      <a href="tel:310-849-9353" >
+		      <a href="tel:928-575-5043" >
 		      <Button className='navButt' id='contact'>
 		         <Icon size={30} icon={phone}></Icon>
 		      </Button>

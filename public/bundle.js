@@ -30122,6 +30122,11 @@ var Reservation = function (_React$Component) {
   }
 
   _createClass(Reservation, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var open = this.state.open;
@@ -35116,9 +35121,11 @@ var Home = function (_Component) {
                   'div',
                   { className: 'card-body' },
                   _react2.default.createElement(
-                    'a',
-                    { href: 'tel:310-849-9353', className: 'card-link' },
-                    'Call to Book.'
+                    'p',
+                    { id: 'resClick', onClick: function onClick(e) {
+                        return _reactRouter.browserHistory.push('reservations');
+                      }, className: 'card-link' },
+                    'Click to Book Online.'
                   )
                 )
               )
@@ -35167,9 +35174,11 @@ var Home = function (_Component) {
                   'div',
                   { className: 'card-body' },
                   _react2.default.createElement(
-                    'a',
-                    { href: 'tel:310-849-9353', className: 'card-link' },
-                    'Call to Book.'
+                    'p',
+                    { id: 'resClick', onClick: function onClick(e) {
+                        return _reactRouter.browserHistory.push('reservations');
+                      }, className: 'card-link' },
+                    'Click to Book Online.'
                   )
                 )
               )
@@ -35474,7 +35483,7 @@ var NavBar = function (_Component) {
 								),
 								_react2.default.createElement(
 									'a',
-									{ href: 'tel:310-849-9353' },
+									{ href: 'tel:928-575-5043' },
 									_react2.default.createElement(
 										_reactBootstrap.Button,
 										{ className: 'navButt', id: 'contact' },

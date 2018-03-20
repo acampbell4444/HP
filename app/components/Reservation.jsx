@@ -17,6 +17,10 @@ export default class Reservation extends React.Component {
     browserHistory.push('home')
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     const { open } = this.state
     return (
