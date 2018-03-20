@@ -22,16 +22,14 @@ export default class Reservation extends React.Component {
     return (
       <div id='reserveBody'>
         <div id='reserveCanvas'>
-    
+        <h1 id='reserveTitle'>Book online and save $10-<br/> on the 800' Flight!</h1>
 
-            <Modal id='reservationModal' open={open} onClose={this.onCloseModal} showCloseIcon={false}>
               <iframe id="bookingCalendar" 
               src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"                      frameBorder="0"
               >
                 <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a>
               </iframe>
-              <Button id='closeModalBtn' className='btn btn-danger btn-xs' onClick={e => browserHistory.push('home')}>Close</Button>
-            </Modal>
+            
         </div>
       </div>
     )
