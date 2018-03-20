@@ -1,33 +1,39 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { render } from 'react-dom'
+import Modal from 'react-responsive-modal'
+import { Button } from 'react-bootstrap'
+import $ from 'jquery'
+import Icon from 'react-icons-kit'
+import { calendar} from 'react-icons-kit/icomoon'
+import { browserHistory } from 'react-router'
 
-export default class Reservation extends Component {
-  
-  componentDidMount() {
-    window.scrollTo(0, 0)
+export default class Reservation extends React.Component {
+  state = {open: true}
+
+  onOpenModal = () => {
+    this.setState({ open: true })
   }
-
-  componentDidUpdate() {
-  	window.scrollTo(0, 0)
+  onCloseModal = () => {
+    browserHistory.push('home')
   }
 
   render() {
+    const { open } = this.state
     return (
-      <div id='reserveCanvas' className='flex container'>
+      <div id='reserveBody'>
+        <div id='reserveCanvas'>
+    
 
-          <h1 id='reservationTitle'>Reserve Online and get the 800' flight for $65!</h1>
-          <div id='wrap'>
-
-            <iframe id='frame'  src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"
-             frameBorder="0"><a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a></iframe>
-
-          </div>
-
-
-
-		         <div className='cont'>
-               <p className='threeStars'>{'\u2728'}</p>
-		         </div>
+            <Modal id='reservationModal' open={open} onClose={this.onCloseModal} showCloseIcon={false}>
+              <iframe id="bookingCalendar" 
+              src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"                      frameBorder="0"
+              >
+                <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=y&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a>
+              </iframe>
+              <Button id='closeModalBtn' className='btn btn-danger btn-xs' onClick={e => browserHistory.push('home')}>Close</Button>
+            </Modal>
+        </div>
       </div>
     )
-   }
+  }
 }
