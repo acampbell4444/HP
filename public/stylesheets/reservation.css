@@ -17,6 +17,8 @@
 
 #reserveBody {
   background-color: #2E389C;
+   overflow-y: scroll !important;
+  overflow-x: scroll !important;
 }
 
 .topmenu > h1 {
@@ -45,8 +47,8 @@
   z-index: 99999999999;
   padding-bottom: 5%;
   margin: 0 auto;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow-y: scroll !important;
+  overflow-x: scroll !important;
 }
 
 svg {
