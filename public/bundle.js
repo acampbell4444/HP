@@ -29633,6 +29633,11 @@ var FAQ = function (_Component) {
   }
 
   _createClass(FAQ, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -35057,11 +35062,7 @@ var Home = function (_Component) {
                 { id: 'bookingButton2', onClick: function onClick(e) {
                     return _reactRouter.browserHistory.push('reservations');
                   } },
-                _react2.default.createElement(
-                  'span',
-                  { id: 'bkTxt2' },
-                  ' BOOK NOW'
-                )
+                'BOOK NOW'
               )
             )
           )

@@ -99,7 +99,7 @@
     margin: 1% auto 0;
     top: 33%;
     padding: 6px 14px;
-    border: 1px solid black;
+    border: 3px solid white;
     border-radius: 43px;
     background-color: rgba(255, 255, 255, 0.2);
     color: black;
@@ -107,22 +107,24 @@
     z-index: 999999;
     margin-bottom: 5%;
     width: 50%;
-    text-shadow:
+    font-size: 40px;
+     text-shadow:
     -1px -1px 0 black,
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 black;
+    color: white;
 }
 
 #bookingButton:hover {
-	color: #DB4C3F;
-	border-color: #DB4C3F;;
+	color: #D94D44;
+	border-color: #D94D44;;
 	cursor: pointer;
 }
 #bookingButton2:hover {
   background-color: black;
-  color: #DB4C3F;
-  border-color: #DB4C3F;;
+  color: #D94D44;
+  border-color: #D94D44;
   cursor: pointer;
 }
 

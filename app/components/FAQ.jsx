@@ -3,6 +3,10 @@ import Accordion from 'react-responsive-accordion'
 
 export default class FAQ extends Component {
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <div id='faqContainer'>

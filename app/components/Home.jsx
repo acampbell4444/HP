@@ -46,7 +46,7 @@ export default class Home extends Component {
                         We look forward to making this experience the highlight of your stay on Lake Havasu.
                       </p>
                       <div id='bookingButton2' onClick={e => browserHistory.push('reservations')}>
-                        <span id='bkTxt2'> BOOK NOW</span>
+                        BOOK NOW
                       </div>
                     </div>
                   </div>
