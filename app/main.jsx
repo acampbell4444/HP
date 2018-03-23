@@ -40,10 +40,9 @@ const onGalleryEnter = () => store.dispatch(updateCurrentRoute('gallery'))
 const onContactEnter = () => store.dispatch(updateCurrentRoute('contact'))
 const onFAQEnter = () => store.dispatch(updateCurrentRoute('FAQ'))
 
+export const ROUTES = (
 
-render(
-  <Provider store={store}>
-    <Router history={browserHistory}>
+      <Router history={browserHistory}>
       <Route path="/" component={GatorBacked}>
         <IndexRedirect to="/home" />
         <Route path="/home" component={Home} onEnter={onHomeEnter}/>
@@ -54,6 +53,12 @@ render(
       </Route>
       <Route path='*' component={NotFound} />
     </Router>
+  )
+
+
+render(
+  <Provider store={store}>
+    {ROUTES}
   </Provider>,
   document.getElementById('main')
 )
