@@ -23,7 +23,7 @@ import Footer from './components/Footer'
 import { updateCurrentRoute } from './reducers/navBar'
 
 
-const GatorBacked = connect(
+const HavasuParasail = connect(
   ({ auth }) => ({ user: auth })
 )(
   ({ user, children }) =>
@@ -40,10 +40,10 @@ const onGalleryEnter = () => store.dispatch(updateCurrentRoute('gallery'))
 const onContactEnter = () => store.dispatch(updateCurrentRoute('contact'))
 const onFAQEnter = () => store.dispatch(updateCurrentRoute('FAQ'))
 
-export const ROUTES = (
+const ROUTES = (
 
       <Router history={browserHistory}>
-      <Route path="/" component={GatorBacked}>
+      <Route path="/" component={HavasuParasail}>
         <IndexRedirect to="/home" />
         <Route path="/home" component={Home} onEnter={onHomeEnter}/>
         <Route path="/reservations" component={Reservation} onEnter={onReservationsEnter}/>
@@ -55,6 +55,8 @@ export const ROUTES = (
     </Router>
   )
 
+export default ROUTES
+
 
 render(
   <Provider store={store}>
@@ -62,3 +64,4 @@ render(
   </Provider>,
   document.getElementById('main')
 )
+
