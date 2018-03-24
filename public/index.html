@@ -1,6 +1,49 @@
 <!doctype html>
 <html>
   <head>
+    <script type="application/ld+json">
+{
+  "@context":"http://www.havasuparasail.com",
+  "@type":"Boat Tour",
+  "image": [
+    "http://www.havasuparasail.com/images/bora.JPG",
+    "http://www.havasuparasail.com/images/clearCouple.jpg"
+   ],
+  "@id":"http://www.havasuparasail.com/",
+  "name":"Havasu Parasail",
+  "address":{
+    "@type":"PostalAddress",
+    // "streetAddress":"3986 Rivermark Pkwy",
+    "addressLocality":"Lake Havsasu City",
+    "addressRegion":"AZ",
+    "postalCode":"86403",
+    "addressCountry":"US"
+  },
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":34.473608,
+    "longitude":114.348074
+  },
+  "telephone":"+19285755043",
+  "potentialAction":{
+    "@type":"ReserveAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"http://www.havasuparasail.com/reservations",
+      "inLanguage":"en-US",
+      "actionPlatform":[
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    },
+    "result":{
+      "@type":"Reservation",
+      "name":"Book a Trip"
+    }
+  }
+}
+</script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
