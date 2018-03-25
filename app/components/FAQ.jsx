@@ -18,24 +18,26 @@ export default class FAQ extends Component {
                  startPosition={200}
       >
 
-          <div data-trigger="Q: How long are the flight times?">
-            <p className="answer flex">Flights range from 8 minutes up to 10 minutes.</p>
+          <div data-trigger="Q: Where do we meet you? How do we find the boat.">
+            <p className="answer flex">If you make a reservation- we will make sure to contact you over the phone to arrange the exact details of how to meet us. If desired, we can meet you on the lake, and transfer from your boat. For land pickups- we will arrange a convenient meeting point for both parties. We are currently working on terms for a central location.</p>
           </div>    
 
+          <div data-trigger="Q: How long are the flight times?">
+            <p className="answer flex">Flights range from 8 minutes up to 10 minutes. The 800' flight is a couple minutes longer than the 600' flight.</p>
+          </div>
+
           <div data-trigger="Q: How much does it cost to go parasailing?">
-            <p className="answer flex">800 ft. Flight : $75 per person<br/>
-            600 ft. Flight : $65 per person<br/>
-            Non-Flying passenger : $25 per person <br/>
-            Check our rates page for the latest deals.</p> 
+            <p className="answer flex">800 ft. Flight : $70 per person<br/>
+            600 ft. Flight : $60 per person<br/>
+            Non-Flying passenger : $20 per person </p>
           </div> 
 
           <div data-trigger="Q: Do I have to get wet?">
-            <p className="answer flex">
-            No, you don't have to get wet if you don't want to. Near the end of the flight, the captain slows the boat down and has you gently freefall, dipping your feet in the water for a refreshing splash. He then lands you back safely on the boat deck. Please let us know if you would like to stay completely dry.</p>
+            <p className="answer flex">No. You take off and land on our over-sized flight deck. 99% of landings are so smooth and slow that you could balance a glass of water without spilling a drop. If you want a dip at the end of your ride- we can slow down the boat and dip your legs in the water. We will then lift you back into the air- and slowly reel you back onto the boat with our hydraulic winch.</p>
           </div>  
 
           <div data-trigger="Q: How long does the entire trip take?">
-            <p className="answer flex">The trips can vary depending on how many other customers are on the boat, we do try to limit each trip to one hour on the water.</p>
+            <p className="answer flex">We shoot for about an hour- but exact times can vary depending on the pickup location of our passengers, and the weather conditions.</p>
           </div>          
 
           <div data-trigger="Q: Do I need prior experience?">
@@ -43,33 +45,33 @@ export default class FAQ extends Component {
           </div>          
 
           <div data-trigger="Q: Do I need to know how to swim?">
-            <p className="answer flex">No, since all takeoffs and landings are done from the back of the boat you don't even have to get wet. In the extremely unlikely event of a boat malfunction, the parasailors slowly drift back to the water and the mandatory lifejackets will hold you afloat.</p>
+            <p className="answer flex">No. You take off and land on the boat. In the very rare event of a water landing- your lifejacket will keep you afloat. If this happens, all you need to do is remain calm and float- and you will be back on the boat in no time.</p>
           </div>          
 
 
           <div data-trigger="Q: Can I go if I'm pregnant?">
-            <p className="answer flex">For your safety, pregnant women are not able to go parasailing or on the boat. But please come back and see us next year.</p>
+            <p className="answer flex">No. Out of precaution, you cannot parasail, or ride on the boat. But come back next year!</p>
           </div>          
 
           <div data-trigger="Q: Can I go if I have suffered spinal, back, or neck injuries in the past?">
-            <p className="answer flex">Because the boat ride can be a bit bumpy at times, we ask that if you have suffered from these types of injuries you refrain from going parasailing or even on the boat.</p>
+            <p className="answer flex">No. Occasional bumps on the boat are not good for these conditions.</p>
           </div>          
 
           <div data-trigger="Q: How old do I need to be to fly?">
-            <p className="answer flex">Parasailors must be at least 5-years-old to parasail. Guests younger than 18-years-old must have an adult sign them in. On the other end of the spectrum, the oldest person we flew was 102 years old. Parasailing is safe and exciting for all ages!</p>
+            <p className="answer flex">Parasailors must be at least 4 years old to parasail. Guests under 18 must be signed in by a supervisor or guardian.</p>
           </div>          
 
           <div data-trigger="Q: Can I go up with someone else?">
-            <p className="answer flex"> Yes, we offer tandem and triple flights (2 or 3 people in the same chute). All multi-passenger flights are side by side offering great views and comfortable flights. If the combined weight is over 500 lbs. then it's up to the captain to make the call. His decision is based on weather conditions.</p>
+            <p className="answer flex"> Yes, we offer tandem and triple flights (2 or 3 people in the air at the same time). Multi-passenger flights are side by side offering great views and comfortable flights. If the combined weight is over 400 pounds, the captain will determine if it is safe based on the weather conditions. Wind makes a big difference.</p>
           </div>          
 
           <div data-trigger="Q: Is there a weight restriction?">
-            <p className="answer flex"> The minimum combined weight requirement is 180lbs, and the maximum combined weight is 450lbs. It will be up to the captain to determine. This all can vary according to winds conditions.</p>
+            <p className="answer flex">Yes. Depending on the windspeed at the time of the trip. Typically the minimum weight in the chute is 100 lbs, and the maximum weight is 450-500 lbs.</p>
           </div>
            
 
           <div data-trigger="Q: What if I change my mind when I'm already on the boat?">
-            <p className="answer flex"> You can change your mind but you will not be refunded. That being said, this rarely happens. On the contrary, we've had folks who were coming along just for the boat ride, ask if they too could go parasailing after seeing how fun and gentle it was.</p>
+            <p className="answer flex"> This does not happen very often. Unfortunately, we cannot offer a refund after the trip has started.</p>
           </div>          
 
           <div data-trigger="Q: Can I go on the boat to watch but not necessarily go up?">
@@ -113,7 +115,7 @@ export default class FAQ extends Component {
           </div>           
 
           <div data-trigger="Q: Is it customary to tip the crew?">
-            <p className="answer flex">Just like others in the service industry, the crew works very hard to make sure all your needs aboard the boat are taken care of.</p>
+            <p className="answer flex">Yes, if they deserve it. Charter boat workers are part of the service industry. We will do our best to meet your expectations and leave you with a smile.</p>
           </div>     
  
 

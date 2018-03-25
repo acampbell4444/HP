@@ -96,7 +96,7 @@
 
 #bookingButton2 {
     z-index: 99999;
-    margin: 1% auto 0;
+    margin: 1% auto 2%;
     top: 33%;
     padding: 6px 14px;
     border: 3px solid white;
@@ -107,7 +107,7 @@
     z-index: 999999;
     margin-bottom: 5%;
     width: 50%;
-    font-size: 40px;
+    font-size: 20px;
      text-shadow:
     -1px -1px 0 black,
     1px -1px 0 black,

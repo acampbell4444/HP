@@ -89,6 +89,14 @@ const IMAGES =
         caption: "Your captain has been parasailing for 15 years, and carries a 100 ton US Coast Guard Commercial License. He has flown over 50,000 people with a 100% safety record. Your safety is our #1 priority."
 },
 {
+        src: '/images/parasailwatercolor.jpg',
+        thumbnail:'/images/parasailwatercolor.jpg',
+        thumbnailWidth: 240,
+        thumbnailHeight: 174,
+        tags: [{value: 'Paint the Sky', title: '1'}],
+        caption: "Like a dream."
+},
+{
         src: '/images/caliPalms.jpg',
         thumbnail:'/images/caliPalms.jpg',
         thumbnailWidth: 240,

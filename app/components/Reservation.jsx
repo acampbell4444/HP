@@ -26,7 +26,9 @@ export default class Reservation extends React.Component {
     return (
       <div id='reserveBody'>
         <div id='reserveCanvas'>
-        <h1 id='reserveTitle'>Book online and save $10-<br/> on the 800' Flight!</h1>
+        <h1 id='reserveTitle'>Book online and save $10-<br/> on the 800' Flight!<br/>  </h1>
+       <p id='contactDetails'> * Must reserve 24 hours in advance. After you make a reservation, we will contact you to arrange pick-up/drop-off details. </p> <br/>
+      
 
               <iframe id="bookingCalendar" 
               src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"                      frameBorder="0"

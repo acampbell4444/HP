@@ -9,8 +9,8 @@
    padding-top: 0.5%;
 }
 
-#footerText1, #footerText2, #dot {
-  color:  white;
+#footerText1, #footerText2, #footerText3, #dot, #dot2 {
+  color:  #2BE99E;
   font-size: 17px;
   font-weight: 900;
   text-shadow:
@@ -20,8 +20,12 @@
     1px 1px 0 black;
 }
 
+#footerText3, #dot2 {
+  display: none;
+}
+
 #footerText1:hover, #footerText2:hover {
-  color: orange;
+  color: #FC43AD;
   text-decoration: none;
   cursor: pointer;
 }
@@ -32,9 +36,16 @@
     padding-top: 0;
 	}
 
-	#footerText1, #footerText2, #dot {
-      font-size: 22px;
+  #footerText3, #dot2 {
+      display: inline;
     }
+
+	#footerText1, #footerText2, #footerText3, #dot, #dot2 {
+      font-size: 22px;
+      margin: 0 10px;
+    }
+
+  
 
 }
 

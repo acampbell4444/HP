@@ -9,6 +9,7 @@ body {
 }
 
 #reserveTitle {
+    margin-top: 160px;
     margin-bottom: 30px;
     text-align: center;
     font-family: 'Expletus Sans', Bold;
@@ -16,9 +17,22 @@ body {
     font-size: 30px;
 }
 
+#contactDetails {
+  font-size: 16px;
+  font-style: italic;
+  color: #2BBD27;
+  font-weight: 900;
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+}
+
+
+
 #reserveTitle:hover {
   filter: brightness(75%);
 }
+
+
 
 #bookingCalendar{
   width: 100%;
@@ -46,6 +60,11 @@ body {
     font-size: 52px;
     margin-top: 200px;
   }
+
+  #contactDetails {
+  font-size: 20px;
+  margin: 30px 100px 50px 100px;
+
 }
 
 

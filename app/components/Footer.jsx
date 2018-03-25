@@ -13,6 +13,8 @@ export default class Footer extends Component {
         </span> 
          <span id='dot'> • </span>
          <a id='footerText2' href="tel:928-575-5043" > 928-575-5043</a>
+         <span id='dot2'> • </span>
+         <p id='footerText3'>Lake Havasu City, AZ</p>
         </p>
       </div>
     </div>
