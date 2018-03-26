@@ -17,13 +17,21 @@ body {
     font-size: 30px;
 }
 
-#contactDetails {
+#contactDetails, #openDate {
   font-size: 16px;
   font-style: italic;
   color: #2BBD27;
-  font-weight: 900;
   text-align: center;
   margin: 30px 20px 30px 20px;
+}
+
+#openDate {
+  font-size: 22px;
+  color: #D32C30;
+  font-weight: 900;
+  text-align: center;
+  margin: 30px 20px 30px 10px;
+  font-weight: 900;
 }
 
 
@@ -44,9 +52,10 @@ body {
 }
 
 #reserveCanvas {
- margin-top: 150px;
- margin-left: 10px;
- margin-right: 10px;
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+
 
 }
 
@@ -61,9 +70,14 @@ body {
     margin-top: 200px;
   }
 
-  #contactDetails {
-  font-size: 20px;
-  margin: 30px 100px 50px 100px;
+  #contactDetails, #openDate {
+    font-size: 16px;
+    margin: 30px 100px 20px 100px;
+  }
+
+  #openDate {
+    font-size: 27px;
+  }
 
 }
 
