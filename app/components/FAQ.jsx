@@ -79,35 +79,35 @@ export default class FAQ extends Component {
           </div>
 
           <div data-trigger="Q: How does parasailing work?">
-            <p className="answer flex">After getting outfitted with a life vest and harness, you're seated on the flight deck of the boat. Once seated the mate clips your harness to the parachute. The captain then presses a button and up you go real nice and smooth, just like sitting on a swing set that slowly elevates you for the experience of a lifetime. And yes, all take offs and landings are done straight from the boat.</p>
+            <p className="answer flex"> We point the boat into the wind and inflate the parachute. You slowly walk to the back of the boat and sit below the parachute, where we clip you in via your safety harness. The captain slowly lets out the winch and the parachute brings you up slow and steady into the sky. When the trip is over, we reel you back in- and you land gently on your rear-end - right where you started!</p>
           </div>          
 
           <div data-trigger="Q: What happens if the boat or towline breaks?">
-            <p className="answer flex">If this happens, the participants will slowly and safely descend into the water. The mandatory lifejackets will hold the participants up until which time they are pulled back onto the boat. The parasail will not sink or go over your head. Prior to your flight the captain will give all participants a full safety briefing.</p>
+            <p className="answer flex">Not a big deal. This is why we parasail over water- in case we need to make a water landing! If there is a towline or mechanical failure, you will slowly descend and land in the water- where your lifejacket will keep you afloat. The parachute will collapse behind you- and we will assist you back onto the boat.</p>
           </div>          
 
-          <div data-trigger="Q: What should I wear and leave behind?">
-            <p className="answer flex">Dress for the weather, if it is cool before your flight or you are sensitive to the sun, we recommend that you wear a long sleeved shirt/ sweatshirt. Bathing suits and beach attire is always recommended, as are towels, bottled water and sun block. We recommend you leave behind anything that can be damaged by contact with water as well as anything that is expensive or hard to replace. We are not responsible for any damaged or lost items.</p>
+          <div data-trigger="Q: What should I bring?">
+            <p className="answer flex">Swimsuit, towel, sunscreen, warm clothes if necessary, cash and/or credit card, smile, sense of adventure.</p>
           </div>
 
           <div data-trigger="Q: Can I take my camera up with me?">
-            <p className="answer flex">You are allowed to take a camera up at your own discretion, and should take into consideration the height and water risks. Disposable cameras are best. We also offer a digital photo package as another option to capture your good times.</p>
+            <p className="answer flex">Yes, at your own risk. We do offer a GoPro rental that you can take up with you, that is securely fixed to your wrist. We also offer a photo package from the boat.</p>
           </div>           
 
           <div data-trigger="Q: What photo package do we offer?">
-            <p className="answer flex">The digital photo package includes 30 photos of your adventure. The crew uses a high quality digital camera to document your entire flight and at the end of the trip you get the memory card to help with bragging rights.</p>
+            <p className="answer flex">The digital photo package includes over 30 pictures of your adventure on a high quality SD card that you get to keep! If you have a group, we use one card for everyone. The GoPro video option is where you take the camera in the air with you and capture the trip from up high.</p>
           </div>                       
           
           <div data-trigger="Q: What are your cancellation and refund policies?">
-            <p className="answer flex">Please cancel one day prior to your reservation for a full refund. Gift Certificates & Retail: We do not refund gift certificates or retail purchases. However, gift certificates are good until they are used.</p>
+            <p className="answer flex">Must cancel 24 hours prior to trip for a full refund.</p>
           </div>            
 
           <div data-trigger="Q: What if it rains or is extremely windy?">
-            <p className="answer flex"> A little sprinkle and we stay out. High gusty winds also make parasailing difficult. The captain then decides if we are going on stand-by or if we close down for the day. If you weren't able to fly then you can either be refunded or rescheduled for a day when we think the sun will come out to play again. If you are unsure about the weather conditions, please give us a call the day of your flight.</p>
+            <p className="answer flex">We will reschedule. We take safety very seriously, and only parasail in consistent, predictable, and reliable conditions.</p>
           </div>
 
           <div data-trigger="Q: What part of our vacation should we plan parasailing for?">
-            <p className="answer flex">We encourage you to plan for parasailing during the first part of your vacation. That way, if the weather does not cooperate you will have other opportunities to fly.</p>
+            <p className="answer flex">The first part- in case we need to reschedule due to weather or other reasons. Don't wait until the last minute! </p>
           </div>              
            
           <div data-trigger="Q: What form of payment do you accept?">
@@ -115,7 +115,7 @@ export default class FAQ extends Component {
           </div>           
 
           <div data-trigger="Q: Is it customary to tip the crew?">
-            <p className="answer flex">Yes, if they deserve it. Charter boat workers are part of the service industry. We will do our best to meet your expectations and leave you with a smile.</p>
+            <p className="answer flex">Yes, if they deserve it. Charter boat workers are part of the general service industry. We will do our best to meet your expectations and leave you with a smile.</p>
           </div>     
  
 
