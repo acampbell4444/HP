@@ -27,7 +27,7 @@ export default class Reservation extends React.Component {
       <div id='reserveBody'>
         <div id='reserveCanvas'>
         <h1 id='reserveTitle'>Book online and save $10-<br/> on the 800' Flight!<br/>  </h1>
-       <p id='openDate'>     Open April 20th, 2018 </p>
+       <p id='openDate'>     Open April 27th, 2018 </p>
        <p id='contactDetails'> * If your desired reservation time is less than 24 hours away, call us to book. Otherwise, feel free to book online. If you make an online reservation, we will contact you to arrange pick-up/drop-off details.  </p>
       
      <div id='bCW'>
