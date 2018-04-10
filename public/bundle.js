@@ -839,7 +839,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -2520,16 +2520,6 @@ module.exports = !__webpack_require__(24)(function () {
 
 /***/ }),
 /* 34 */
-/***/ (function(module, exports) {
-
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
-};
-
-
-/***/ }),
-/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2571,7 +2561,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2597,6 +2587,16 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = { debugTool: debugTool };
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+};
+
 
 /***/ }),
 /* 37 */
@@ -2752,7 +2752,7 @@ SafeAnchor.defaultProps = defaultProps;
 /* 39 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.3' };
+var core = module.exports = { version: '2.5.4' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -3122,7 +3122,7 @@ var pIE = __webpack_require__(112);
 var createDesc = __webpack_require__(67);
 var toIObject = __webpack_require__(42);
 var toPrimitive = __webpack_require__(113);
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var IE8_DOM_DEFINE = __webpack_require__(267);
 var gOPD = Object.getOwnPropertyDescriptor;
 
@@ -3170,7 +3170,7 @@ if (__webpack_require__(33)) {
   var toIndex = __webpack_require__(284);
   var toAbsoluteIndex = __webpack_require__(90);
   var toPrimitive = __webpack_require__(113);
-  var has = __webpack_require__(34);
+  var has = __webpack_require__(36);
   var classof = __webpack_require__(178);
   var isObject = __webpack_require__(15);
   var toObject = __webpack_require__(47);
@@ -3701,7 +3701,7 @@ var _assign = __webpack_require__(18);
 
 var PooledClass = __webpack_require__(70);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var warning = __webpack_require__(12);
 
 var didWarnForAddedNewProperty = false;
@@ -3965,6 +3965,7 @@ var global = __webpack_require__(53);
 var core = __webpack_require__(39);
 var ctx = __webpack_require__(162);
 var hide = __webpack_require__(79);
+var has = __webpack_require__(61);
 var PROTOTYPE = 'prototype';
 
 var $export = function (type, name, source) {
@@ -3982,7 +3983,7 @@ var $export = function (type, name, source) {
   for (key in source) {
     // contains in native
     own = !IS_FORCED && target && target[key] !== undefined;
-    if (own && key in exports) continue;
+    if (own && has(exports, key)) continue;
     // export native or passed
     out = own ? target[key] : source[key];
     // prevent global pollution for namespaces
@@ -4042,7 +4043,7 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 
 var META = __webpack_require__(69)('meta');
 var isObject = __webpack_require__(15);
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var setDesc = __webpack_require__(28).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
@@ -4101,7 +4102,7 @@ var meta = module.exports = {
 
 var global = __webpack_require__(17);
 var hide = __webpack_require__(37);
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var SRC = __webpack_require__(69)('src');
 var TO_STRING = 'toString';
 var $toString = Function[TO_STRING];
@@ -5452,7 +5453,7 @@ module.exports = function (it) {
 /* 84 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.3' };
+var core = module.exports = { version: '2.5.4' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -5475,7 +5476,7 @@ module.exports = false;
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var toObject = __webpack_require__(47);
 var IE_PROTO = __webpack_require__(188)('IE_PROTO');
 var ObjectProto = Object.prototype;
@@ -5505,7 +5506,7 @@ module.exports = function (target, src, safe) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(28).f;
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var TAG = __webpack_require__(22)('toStringTag');
 
 module.exports = function (it, tag, stat) {
@@ -6002,7 +6003,7 @@ module.exports = DOMLazyTree;
 
 
 var ReactRef = __webpack_require__(822);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 
 var warning = __webpack_require__(12);
 
@@ -13458,7 +13459,7 @@ TabContent.childContextTypes = childContextTypes;
 var DOMLazyTree = __webpack_require__(96);
 var Danger = __webpack_require__(785);
 var ReactDOMComponentTree = __webpack_require__(21);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(226);
 var setInnerHTML = __webpack_require__(152);
@@ -14276,7 +14277,7 @@ var _prodInvariant = __webpack_require__(14);
 
 var ReactCurrentOwner = __webpack_require__(44);
 var ReactInstanceMap = __webpack_require__(119);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 var ReactUpdates = __webpack_require__(43);
 
 var invariant = __webpack_require__(11);
@@ -14792,7 +14793,7 @@ module.exports = shouldUpdateReactComponent;
 
 var _assign = __webpack_require__(18);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var warning = __webpack_require__(12);
 
 var validateDOMNesting = emptyFunction;
@@ -15703,7 +15704,7 @@ var EXITING = exports.EXITING = 'exiting';
  *         ...defaultStyle,
  *         ...transitionStyles[state]
  *       }}>
- *         I'm A fade Transition!
+ *         I'm a fade Transition!
  *       </div>
  *     )}
  *   </Transition>
@@ -15715,10 +15716,10 @@ var EXITING = exports.EXITING = 'exiting';
  * component (such as by adding styles or classes) when it changes states.
  *
  * There are 4 main states a Transition can be in:
- *  - `ENTERING`
- *  - `ENTERED`
- *  - `EXITING`
- *  - `EXITED`
+ *  - `entering`
+ *  - `entered`
+ *  - `exiting`
+ *  - `exited`
  *
  * Transition state is toggled via the `in` prop. When `true` the component begins the
  * "Enter" stage. During this stage, the component will shift from its current transition state,
@@ -15743,9 +15744,24 @@ var EXITING = exports.EXITING = 'exiting';
  * ```
  *
  * When the button is clicked the component will shift to the `'entering'` state and
- * stay there for 500ms (the value of `timeout`) when finally switches to `'entered'`.
+ * stay there for 500ms (the value of `timeout`) before it finally switches to `'entered'`.
  *
  * When `in` is `false` the same thing happens except the state moves from `'exiting'` to `'exited'`.
+ *
+ * > **Note**: For simpler transitions the `Transition` component might be enough, but
+ * > take into account that it's platform-agnostic, while the `CSSTransition` component
+ * > [forces reflows](https://github.com/reactjs/react-transition-group/blob/5007303e729a74be66a21c3e2205e4916821524b/src/CSSTransition.js#L208-L215)
+ * > in order to make more complex transitions more predictable. For example, even though
+ * > classes `example-enter` and `example-enter-active` are applied immediately one after
+ * > another, you can still transition from one to the other because of the forced reflow
+ * > (read [this issue](https://github.com/reactjs/react-transition-group/issues/159#issuecomment-322761171)
+ * > for more info). Take this into account when choosing between `Transition` and
+ * > `CSSTransition`.
+ *
+ * ## Example
+ *
+ * <iframe src="https://codesandbox.io/embed/741op4mmj0?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+ *
  */
 
 var Transition = function (_React$Component) {
@@ -16026,7 +16042,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
   /**
    * A `function` child can be used instead of a React element.
    * This function is called with the current transition status
-   * ('entering', 'entered', 'exiting', 'exited', 'unmounted'), which can used
+   * ('entering', 'entered', 'exiting', 'exited', 'unmounted'), which can be used
    * to apply context specific props to a component.
    *
    * ```jsx
@@ -16079,7 +16095,7 @@ Transition.propTypes = process.env.NODE_ENV !== "production" ? {
 
   /**
    * The duration of the transition, in milliseconds.
-   * Required unless `addEventListener` is provided
+   * Required unless `addEndListener` is provided
    *
    * You may specify a single timeout for all transitions like: `timeout={500}`,
    * or individually like:
@@ -16968,7 +16984,6 @@ var LIBRARY = __webpack_require__(165);
 var $export = __webpack_require__(52);
 var redefine = __webpack_require__(260);
 var hide = __webpack_require__(79);
-var has = __webpack_require__(61);
 var Iterators = __webpack_require__(105);
 var $iterCreate = __webpack_require__(555);
 var setToStringTag = __webpack_require__(168);
@@ -16995,7 +17010,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+  var $default = $native || getMethod(DEFAULT);
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;
@@ -17006,7 +17021,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
       // Set @@toStringTag to native iterators
       setToStringTag(IteratorPrototype, TAG, true);
       // fix for some old engines
-      if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
     }
   }
   // fix Array#{values, @@iterator}.name in V8 / FF
@@ -17355,7 +17370,7 @@ var isObject = __webpack_require__(15);
 var anInstance = __webpack_require__(82);
 var forOf = __webpack_require__(126);
 var createArrayMethod = __webpack_require__(109);
-var $has = __webpack_require__(34);
+var $has = __webpack_require__(36);
 var validate = __webpack_require__(91);
 var arrayFind = createArrayMethod(5);
 var arrayFindIndex = createArrayMethod(6);
@@ -17538,7 +17553,6 @@ var LIBRARY = __webpack_require__(86);
 var $export = __webpack_require__(10);
 var redefine = __webpack_require__(55);
 var hide = __webpack_require__(37);
-var has = __webpack_require__(34);
 var Iterators = __webpack_require__(85);
 var $iterCreate = __webpack_require__(585);
 var setToStringTag = __webpack_require__(89);
@@ -17565,7 +17579,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
   var VALUES_BUG = false;
   var proto = Base.prototype;
   var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = (!BUGGY && $native) || getMethod(DEFAULT);
+  var $default = $native || getMethod(DEFAULT);
   var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
   var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
   var methods, key, IteratorPrototype;
@@ -17576,7 +17590,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
       // Set @@toStringTag to native iterators
       setToStringTag(IteratorPrototype, TAG, true);
       // fix for some old engines
-      if (!LIBRARY && !has(IteratorPrototype, ITERATOR)) hide(IteratorPrototype, ITERATOR, returnThis);
+      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
     }
   }
   // fix Array#{values, @@iterator}.name in V8 / FF
@@ -17719,7 +17733,7 @@ module.exports.f = function getOwnPropertyNames(it) {
 /* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var toIObject = __webpack_require__(42);
 var arrayIndexOf = __webpack_require__(177)(false);
 var IE_PROTO = __webpack_require__(188)('IE_PROTO');
@@ -19263,7 +19277,7 @@ module.exports = exports['default'];
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -20467,7 +20481,7 @@ module.exports = function(isValidElement) {
 
 
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var invariant = __webpack_require__(11);
 var warning = __webpack_require__(12);
 var assign = __webpack_require__(18);
@@ -24274,7 +24288,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 var DOMProperty = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(21);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 
 var quoteAttributeValueForBrowser = __webpack_require__(848);
 var warning = __webpack_require__(12);
@@ -25004,7 +25018,7 @@ var ReactDOMContainerInfo = __webpack_require__(795);
 var ReactDOMFeatureFlags = __webpack_require__(797);
 var ReactFeatureFlags = __webpack_require__(342);
 var ReactInstanceMap = __webpack_require__(119);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 var ReactMarkupChecksum = __webpack_require__(817);
 var ReactReconciler = __webpack_require__(97);
 var ReactUpdateQueue = __webpack_require__(225);
@@ -27434,16 +27448,23 @@ var Thumbs = function (_Component) {
         var _this = _possibleConstructorReturn(this, (Thumbs.__proto__ || Object.getPrototypeOf(Thumbs)).call(this, props));
 
         _this.updateSizes = function () {
-            if (!_this.state.initialized) {
+            if (!_this.props.children || !_this.refs.itemsWrapper) {
                 return;
             }
 
             var total = _this.props.children.length;
-            _this.wrapperSize = _this.itemsWrapper.clientWidth;
-            _this.itemSize = _this.props.thumbWidth ? _this.props.thumbWidth : (0, _dimensions.outerWidth)(_this.refs.thumb0);
-            _this.visibleItems = Math.floor(_this.wrapperSize / _this.itemSize);
-            _this.lastPosition = total - _this.visibleItems;
-            _this.showArrows = _this.visibleItems < total;
+            var wrapperSize = _this.refs.itemsWrapper.clientWidth;
+            var itemSize = _this.props.thumbWidth ? _this.props.thumbWidth : (0, _dimensions.outerWidth)(_this.refs.thumb0);
+            var visibleItems = Math.floor(wrapperSize / itemSize);
+            var lastPosition = total - visibleItems;
+            var showArrows = visibleItems < total;
+            _this.setState({
+                itemSize: itemSize,
+                visibleItems: visibleItems,
+                firstItem: showArrows ? _this.getFirstItem(_this.props.selectedItem) : 0,
+                lastPosition: lastPosition,
+                showArrows: showArrows
+            });
         };
 
         _this.setMountState = function () {
@@ -27473,12 +27494,9 @@ var Thumbs = function (_Component) {
 
         _this.onSwipeMove = function (deltaX) {
             var leftBoundry = 0;
-            var list = _reactDom2.default.findDOMNode(_this.itemList);
-            var wrapperSize = list.clientWidth;
-            var visibleItems = Math.floor(wrapperSize / _this.itemSize);
 
-            var currentPosition = -_this.state.firstItem * _this.itemSize;
-            var lastLeftBoundry = -_this.visibleItems * _this.itemSize;
+            var currentPosition = -_this.state.firstItem * _this.state.itemSize;
+            var lastLeftBoundry = -_this.state.visibleItems * _this.state.itemSize;
 
             // prevent user from swiping left out of boundaries
             if (currentPosition === leftBoundry && deltaX > 0) {
@@ -27520,11 +27538,14 @@ var Thumbs = function (_Component) {
         };
 
         _this.state = {
-            initialized: false,
             selectedItem: props.selectedItem,
             hasMount: false,
-            firstItem: _this.getFirstItem(props.selectedItem),
-            images: []
+            firstItem: 0,
+            itemSize: null,
+            visibleItems: 0,
+            lastPosition: 0,
+            showArrows: false,
+            images: _this.getImages()
         };
         return _this;
     }
@@ -27532,10 +27553,6 @@ var Thumbs = function (_Component) {
     _createClass(Thumbs, [{
         key: 'componentDidMount',
         value: function componentDidMount(nextProps) {
-            if (!this.props.children) {
-                return;
-            }
-
             this.setupThumbs();
         }
     }, {
@@ -27547,13 +27564,22 @@ var Thumbs = function (_Component) {
                     firstItem: this.getFirstItem(props.selectedItem)
                 });
             }
+            if (props.children !== this.props.children) {
+                this.setState({
+                    images: this.getImages()
+                });
+            }
         }
     }, {
         key: 'componentDidUpdate',
         value: function componentDidUpdate(prevProps) {
-            if (!prevProps.children && this.props.children && !this.state.initialized) {
-                this.setupThumbs();
+            if (this.props.children === prevProps.children) {
+                return;
             }
+
+            // This will capture any size changes for arrow adjustments etc.
+            // usually in the same render cycle so we don't see any flickers
+            this.updateSizes();
         }
     }, {
         key: 'componentWillUnmount',
@@ -27568,17 +27594,6 @@ var Thumbs = function (_Component) {
             window.addEventListener("resize", this.updateSizes);
             // issue #2 - image loading smaller
             window.addEventListener("DOMContentLoaded", this.updateSizes);
-
-            var images = this.getImages();
-
-            if (!images) {
-                return;
-            }
-
-            this.setState({
-                initialized: true,
-                images: images
-            });
 
             // when the component is rendered we need to calculate
             // the container size to adjust the responsive behaviour
@@ -27624,17 +27639,13 @@ var Thumbs = function (_Component) {
     }, {
         key: 'getFirstItem',
         value: function getFirstItem(selectedItem) {
-            if (!this.showArrows) {
-                return 0;
-            }
-
             var firstItem = selectedItem;
 
-            if (selectedItem >= this.lastPosition) {
-                firstItem = this.lastPosition;
+            if (selectedItem >= this.state.lastPosition) {
+                firstItem = this.state.lastPosition;
             }
 
-            if (selectedItem < this.state.firstItem + this.visibleItems) {
+            if (selectedItem < this.state.firstItem + this.state.visibleItems) {
                 firstItem = this.state.firstItem;
             }
 
@@ -27677,18 +27688,18 @@ var Thumbs = function (_Component) {
         value: function render() {
             var _this3 = this;
 
-            if (!this.props.children || this.state.images.length === 0) {
+            if (!this.props.children) {
                 return null;
             }
 
             // show left arrow?
-            var hasPrev = this.showArrows && this.state.firstItem > 0;
+            var hasPrev = this.state.showArrows && this.state.firstItem > 0;
             // show right arrow
-            var hasNext = this.showArrows && this.state.firstItem < this.lastPosition;
+            var hasNext = this.state.showArrows && this.state.firstItem < this.state.lastPosition;
             // obj to hold the transformations and styles
             var itemListStyles = {};
 
-            var currentPosition = -this.state.firstItem * this.itemSize + 'px';
+            var currentPosition = -this.state.firstItem * this.state.itemSize + 'px';
 
             var transformProp = (0, _CSSTranslate2.default)(currentPosition, this.props.axis);
 
@@ -27714,9 +27725,7 @@ var Thumbs = function (_Component) {
                 { className: _cssClasses2.default.CAROUSEL(false) },
                 _react2.default.createElement(
                     'div',
-                    { className: _cssClasses2.default.WRAPPER(false), ref: function ref(node) {
-                            return _this3.itemsWrapper = node;
-                        } },
+                    { className: _cssClasses2.default.WRAPPER(false), ref: 'itemsWrapper' },
                     _react2.default.createElement('button', { type: 'button', className: _cssClasses2.default.ARROW_PREV(!hasPrev), onClick: this.slideRight }),
                     _react2.default.createElement(
                         _reactEasySwipe2.default,
@@ -28500,8 +28509,10 @@ var classNamesShape = exports.classNamesShape = _propTypes2.default.oneOfType([_
   active: _propTypes2.default.string
 }), _propTypes2.default.shape({
   enter: _propTypes2.default.string,
+  enterDone: _propTypes2.default.string,
   enterActive: _propTypes2.default.string,
   exit: _propTypes2.default.string,
+  exitDone: _propTypes2.default.string,
   exitActive: _propTypes2.default.string
 })]);
 
@@ -30200,7 +30211,7 @@ var Reservation = function (_React$Component) {
           _react2.default.createElement(
             'p',
             { id: 'openDate' },
-            '     Open April 20th, 2018 '
+            '     Open April 27th, 2018 '
           ),
           _react2.default.createElement(
             'p',
@@ -31193,7 +31204,7 @@ var notify = function (promise, isReject) {
       var resolve = reaction.resolve;
       var reject = reaction.reject;
       var domain = reaction.domain;
-      var result, then;
+      var result, then, exited;
       try {
         if (handler) {
           if (!ok) {
@@ -31203,8 +31214,11 @@ var notify = function (promise, isReject) {
           if (handler === true) result = value;
           else {
             if (domain) domain.enter();
-            result = handler(value);
-            if (domain) domain.exit();
+            result = handler(value); // may throw
+            if (domain) {
+              domain.exit();
+              exited = true;
+            }
           }
           if (result === reaction.promise) {
             reject(TypeError('Promise-chain cycle'));
@@ -31213,6 +31227,7 @@ var notify = function (promise, isReject) {
           } else resolve(result);
         } else reject(value);
       } catch (e) {
+        if (domain && !exited) domain.exit();
         reject(e);
       }
     };
@@ -31573,7 +31588,7 @@ $export($export.S, 'Reflect', {
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
 var gOPD = __webpack_require__(46);
 var getPrototypeOf = __webpack_require__(87);
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var $export = __webpack_require__(10);
 var isObject = __webpack_require__(15);
 var anObject = __webpack_require__(19);
@@ -31685,7 +31700,7 @@ if (setProto) $export($export.S, 'Reflect', {
 var dP = __webpack_require__(28);
 var gOPD = __webpack_require__(46);
 var getPrototypeOf = __webpack_require__(87);
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var $export = __webpack_require__(10);
 var createDesc = __webpack_require__(67);
 var anObject = __webpack_require__(19);
@@ -32033,7 +32048,7 @@ $export($export.P + $export.F * __webpack_require__(182)(STARTS_WITH), 'String',
 
 // ECMAScript 6 symbols shim
 var global = __webpack_require__(17);
-var has = __webpack_require__(34);
+var has = __webpack_require__(36);
 var DESCRIPTORS = __webpack_require__(33);
 var $export = __webpack_require__(10);
 var redefine = __webpack_require__(55);
@@ -54955,7 +54970,7 @@ module.exports = checkPropTypes;
 
 
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var invariant = __webpack_require__(11);
 var ReactPropTypesSecret = __webpack_require__(211);
 
@@ -63748,7 +63763,7 @@ module.exports = BeforeInputEventPlugin;
 
 var CSSProperty = __webpack_require__(336);
 var ExecutionEnvironment = __webpack_require__(26);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 
 var camelizeStyleName = __webpack_require__(618);
 var dangerousStyleValue = __webpack_require__(841);
@@ -64286,7 +64301,7 @@ var DOMLazyTree = __webpack_require__(96);
 var ExecutionEnvironment = __webpack_require__(26);
 
 var createNodesFromMarkup = __webpack_require__(621);
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var invariant = __webpack_require__(11);
 
 var Danger = {
@@ -64994,7 +65009,7 @@ var ReactComponentEnvironment = __webpack_require__(223);
 var ReactCurrentOwner = __webpack_require__(44);
 var ReactErrorUtils = __webpack_require__(224);
 var ReactInstanceMap = __webpack_require__(119);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 var ReactNodeTypes = __webpack_require__(346);
 var ReactReconciler = __webpack_require__(97);
 
@@ -65977,7 +65992,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactInstrumentation = __webpack_require__(36);
+  var ReactInstrumentation = __webpack_require__(35);
   var ReactDOMUnknownPropertyHook = __webpack_require__(807);
   var ReactDOMNullInputValuePropHook = __webpack_require__(801);
   var ReactDOMInvalidARIAHook = __webpack_require__(800);
@@ -66025,11 +66040,11 @@ var ReactDOMInput = __webpack_require__(799);
 var ReactDOMOption = __webpack_require__(802);
 var ReactDOMSelect = __webpack_require__(340);
 var ReactDOMTextarea = __webpack_require__(805);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 var ReactMultiChild = __webpack_require__(818);
 var ReactServerRenderingTransaction = __webpack_require__(823);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var escapeTextContentForBrowser = __webpack_require__(151);
 var invariant = __webpack_require__(11);
 var isEventSupported = __webpack_require__(230);
@@ -68913,7 +68928,7 @@ var _assign = __webpack_require__(18);
 var ReactUpdates = __webpack_require__(43);
 var Transaction = __webpack_require__(150);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 
 var RESET_BATCHED_UPDATES = {
   initialize: emptyFunction,
@@ -69456,13 +69471,13 @@ var _prodInvariant = __webpack_require__(14);
 
 var ReactComponentEnvironment = __webpack_require__(223);
 var ReactInstanceMap = __webpack_require__(119);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 
 var ReactCurrentOwner = __webpack_require__(44);
 var ReactReconciler = __webpack_require__(97);
 var ReactChildReconciler = __webpack_require__(790);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var flattenChildren = __webpack_require__(843);
 var invariant = __webpack_require__(11);
 
@@ -70034,7 +70049,7 @@ var CallbackQueue = __webpack_require__(337);
 var PooledClass = __webpack_require__(70);
 var ReactBrowserEventEmitter = __webpack_require__(148);
 var ReactInputSelection = __webpack_require__(344);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 var Transaction = __webpack_require__(150);
 var ReactUpdateQueue = __webpack_require__(225);
 
@@ -70306,7 +70321,7 @@ var _assign = __webpack_require__(18);
 
 var PooledClass = __webpack_require__(70);
 var Transaction = __webpack_require__(150);
-var ReactInstrumentation = __webpack_require__(36);
+var ReactInstrumentation = __webpack_require__(35);
 var ReactServerUpdateQueue = __webpack_require__(824);
 
 /**
@@ -71070,7 +71085,7 @@ var SyntheticTransitionEvent = __webpack_require__(837);
 var SyntheticUIEvent = __webpack_require__(120);
 var SyntheticWheelEvent = __webpack_require__(838);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var getEventCharCode = __webpack_require__(227);
 var invariant = __webpack_require__(11);
 
@@ -77066,6 +77081,10 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _theming = __webpack_require__(395);
 
 var _theming2 = _interopRequireDefault(_theming);
@@ -77314,14 +77333,19 @@ exports['default'] = function (stylesOrCreator, InnerComponent) {
             dynamicSheet = _state.dynamicSheet,
             classes = _state.classes;
 
+        var _props = this.props,
+            innerRef = _props.innerRef,
+            props = _objectWithoutProperties(_props, ['innerRef']);
+
         var sheet = dynamicSheet || this.manager.get(theme);
-        var props = {};
-        if (injectMap.sheet) props.sheet = sheet;
-        if (isThemingEnabled && injectMap.theme) props.theme = theme;
-        Object.assign(props, this.props);
+
+        if (injectMap.sheet && !props.sheet) props.sheet = sheet;
+        if (isThemingEnabled && injectMap.theme && !props.theme) props.theme = theme;
+
         // We have merged classes already.
         if (injectMap.classes) props.classes = classes;
-        return _react2['default'].createElement(InnerComponent, props);
+
+        return _react2['default'].createElement(InnerComponent, _extends({ ref: innerRef }, props));
       }
     }, {
       key: 'jss',
@@ -77347,7 +77371,9 @@ exports['default'] = function (stylesOrCreator, InnerComponent) {
     }]);
 
     return Jss;
-  }(_react.Component), _class.displayName = 'Jss(' + displayName + ')', _class.InnerComponent = InnerComponent, _class.contextTypes = _extends({}, _contextTypes2['default'], isThemingEnabled && themeListener.contextTypes), _class.defaultProps = defaultProps, _initialiseProps = function _initialiseProps() {
+  }(_react.Component), _class.displayName = 'Jss(' + displayName + ')', _class.InnerComponent = InnerComponent, _class.contextTypes = _extends({}, _contextTypes2['default'], isThemingEnabled && themeListener.contextTypes), _class.propTypes = {
+    innerRef: _propTypes2['default'].func
+  }, _class.defaultProps = defaultProps, _initialiseProps = function _initialiseProps() {
     var _this2 = this;
 
     this.setTheme = function (theme) {
@@ -80072,6 +80098,10 @@ var Carousel = function (_Component) {
                 itemSize: itemSize,
                 wrapperSize: isHorizontal ? itemSize * _this.props.children.length : itemSize
             });
+
+            if (_this.refs.thumbs) {
+                _this.refs.thumbs.updateSizes();
+            }
         };
 
         _this.setMountState = function () {
@@ -80167,7 +80197,7 @@ var Carousel = function (_Component) {
         };
 
         _this.setPosition = function (position) {
-            var list = _reactDom2.default.findDOMNode(_this.refs.itemList);
+            var list = _reactDom2.default.findDOMNode(_this.list);
             ['WebkitTransform', 'MozTransform', 'MsTransform', 'OTransform', 'transform', 'msTransform'].forEach(function (prop) {
                 list.style[prop] = (0, _CSSTranslate2.default)(position, _this.props.axis);
             });
@@ -80457,13 +80487,15 @@ var Carousel = function (_Component) {
 
             return _react2.default.createElement(
                 _Thumbs2.default,
-                { onSelectItem: this.handleClickThumb, selectedItem: this.state.selectedItem, transitionTime: this.props.transitionTime, thumbWidth: this.props.thumbWidth },
+                { ref: 'thumbs', onSelectItem: this.handleClickThumb, selectedItem: this.state.selectedItem, transitionTime: this.props.transitionTime, thumbWidth: this.props.thumbWidth },
                 this.props.children
             );
         }
     }, {
         key: 'render',
         value: function render() {
+            var _this4 = this;
+
             if (!this.props.children || this.props.children.length === 0) {
                 return null;
             }
@@ -80515,8 +80547,7 @@ var Carousel = function (_Component) {
                 onSwipeStart: this.onSwipeStart,
                 onSwipeEnd: this.onSwipeEnd,
                 style: itemListStyles,
-                tolerance: this.props.swipeScrollTolerance,
-                ref: 'itemList'
+                tolerance: this.props.swipeScrollTolerance
             };
 
             var containerStyles = {};
@@ -80536,7 +80567,6 @@ var Carousel = function (_Component) {
                 swiperProps.style.height = this.state.itemSize;
                 containerStyles.height = this.state.itemSize;
             }
-
             return _react2.default.createElement(
                 'div',
                 { className: this.props.className, ref: 'carouselWrapper' },
@@ -80547,9 +80577,21 @@ var Carousel = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: _cssClasses2.default.WRAPPER(true, this.props.axis), style: containerStyles, ref: 'itemsWrapper' },
-                        _react2.default.createElement(
+                        this.props.swipeable ? _react2.default.createElement(
                             _reactEasySwipe2.default,
-                            _extends({ tagName: 'ul' }, swiperProps, { allowMouseEvents: this.props.emulateTouch }),
+                            _extends({
+                                tagName: 'ul',
+                                ref: function ref(c) {
+                                    return _this4.list = c;
+                                }
+                            }, swiperProps, {
+                                allowMouseEvents: this.props.emulateTouch }),
+                            this.renderItems()
+                        ) : _react2.default.createElement(
+                            'ul',
+                            {
+                                className: _cssClasses2.default.SLIDER(true, this.state.swiping),
+                                style: itemListStyles },
                             this.renderItems()
                         )
                     ),
@@ -80588,6 +80630,7 @@ Carousel.propTypes = {
     interval: _propTypes2.default.number,
     transitionTime: _propTypes2.default.number,
     swipeScrollTolerance: _propTypes2.default.number,
+    swipeable: _propTypes2.default.bool,
     dynamicHeight: _propTypes2.default.bool,
     emulateTouch: _propTypes2.default.bool,
     statusFormatter: _propTypes2.default.func.isRequired,
@@ -80610,6 +80653,7 @@ Carousel.defaultProps = {
     interval: 3000,
     transitionTime: 350,
     swipeScrollTolerance: 5,
+    swipeable: true,
     dynamicHeight: false,
     emulateTouch: false,
     onClickItem: noop,
@@ -82409,7 +82453,7 @@ var ScrollLock = function (_Component) {
 
       // apply the lock styles and padding if this is the first scroll lock
       if (accountForScrollbars && activeScrollLocks < 1) {
-        var currentPadding = parseInt(this.originalStyles.paddingRight, 10);
+        var currentPadding = parseInt(this.originalStyles.paddingRight, 10) || 0;
         var clientWidth = document.body ? document.body.clientWidth : 0;
         var adjustedPadding = window.innerWidth - clientWidth + currentPadding || 0;
 
@@ -82576,12 +82620,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var addClass = function addClass(node, classes) {
-  return classes && classes.split(' ').forEach(function (c) {
+  return node && classes && classes.split(' ').forEach(function (c) {
     return (0, _addClass2.default)(node, c);
   });
 };
 var removeClass = function removeClass(node, classes) {
-  return classes && classes.split(' ').forEach(function (c) {
+  return node && classes && classes.split(' ').forEach(function (c) {
     return (0, _removeClass2.default)(node, c);
   });
 };
@@ -82589,11 +82633,11 @@ var removeClass = function removeClass(node, classes) {
 var propTypes = _extends({}, _Transition2.default.propTypes, {
 
   /**
-   * The animation classNames applied to the component as it enters or exits.
+   * The animation classNames applied to the component as it enters, exits or has finished the transition.
    * A single name can be provided and it will be suffixed for each stage: e.g.
    *
-   * `classNames="fade"` applies `fade-enter`, `fade-enter-active`,
-   * `fade-exit`, `fade-exit-active`, `fade-appear`, and `fade-appear-active`.
+   * `classNames="fade"` applies `fade-enter`, `fade-enter-active`, `fade-enter-done`,
+   * `fade-exit`, `fade-exit-active`, `fade-exit-done`, `fade-appear`, and `fade-appear-active`.
    * Each individual classNames can also be specified independently like:
    *
    * ```js
@@ -82602,8 +82646,10 @@ var propTypes = _extends({}, _Transition2.default.propTypes, {
    *  appearActive: 'my-active-appear',
    *  enter: 'my-enter',
    *  enterActive: 'my-active-enter',
+   *  enterDone: 'my-done-enter,
    *  exit: 'my-exit',
    *  exitActive: 'my-active-exit',
+   *  exitDone: 'my-done-exit,
    * }}
    * ```
    *
@@ -82612,8 +82658,10 @@ var propTypes = _extends({}, _Transition2.default.propTypes, {
    *  appearActive?: string,
    *  enter?: string,
    *  enterActive?: string,
+   *  enterDone?: string,
    *  exit?: string,
    *  exitActive?: string,
+   *  exitDone?: string,
    * }}
    */
   classNames: _PropTypes.classNamesShape,
@@ -82636,7 +82684,7 @@ var propTypes = _extends({}, _Transition2.default.propTypes, {
 
   /**
    * A `<Transition>` callback fired immediately after the 'enter' or
-   * 'appear' classes are **removed** from the DOM node.
+   * 'appear' classes are **removed** and the `done` class is added to the DOM node.
    *
    * @type Function(node: HtmlElement, isAppearing: bool)
    */
@@ -82659,7 +82707,7 @@ var propTypes = _extends({}, _Transition2.default.propTypes, {
 
   /**
    * A `<Transition>` callback fired immediately after the 'exit' classes
-   * are **removed** from the DOM node.
+   * are **removed** and the `exit-done` class is added to the DOM node.
    *
    * @type Function(node: HtmlElement)
    */
@@ -82672,65 +82720,16 @@ var propTypes = _extends({}, _Transition2.default.propTypes, {
  *
  * `CSSTransition` applies a pair of class names during the `appear`, `enter`,
  * and `exit` stages of the transition. The first class is applied and then a
- * second "active" class in order to activate the css animation.
+ * second "active" class in order to activate the css animation. After the animation,
+ * matching `done` class names are applied to persist the animation state.
  *
  * When the `in` prop is toggled to `true` the Component will get
  * the `example-enter` CSS class and the `example-enter-active` CSS class
  * added in the next tick. This is a convention based on the `classNames` prop.
  *
- * ```js
- * import CSSTransition from 'react-transition-group/CSSTransition';
+ * ## Example
  *
- * const Fade = ({ children, ...props }) => (
- *  <CSSTransition
- *    {...props}
- *    timeout={500}
- *    classNames="fade"
- *  >
- *   {children}
- *  </CSSTransition>
- * );
- *
- * class FadeInAndOut extends React.Component {
- *   constructor(...args) {
- *     super(...args);
- *     this.state= { show: false }
- *
- *     setInterval(() => {
- *       this.setState({ show: !this.state.show })
- *     }, 5000)
- *   }
- *   render() {
- *     return (
- *       <Fade in={this.state.show}>
- *         <div>Hello world</div>
- *       </Fade>
- *     )
- *   }
- * }
- * ```
- *
- * And the coorresponding CSS for the `<Fade>` component:
- *
- * ```css
- * .fade-enter {
- *   opacity: 0.01;
- * }
- *
- * .fade-enter.fade-enter-active {
- *   opacity: 1;
- *   transition: opacity 500ms ease-in;
- * }
- *
- * .fade-exit {
- *   opacity: 1;
- * }
- *
- * .fade-exit.fade-exit-active {
- *   opacity: 0.01;
- *   transition: opacity 300ms ease-in;
- * }
- * ```
+ * <iframe src="https://codesandbox.io/embed/m77l2vp00x?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
  */
 
 var CSSTransition = function (_React$Component) {
@@ -82765,14 +82764,18 @@ var CSSTransition = function (_React$Component) {
         _this.props.onEntering(node);
       }
     }, _this.onEntered = function (node, appearing) {
+      var _this$getClassNames3 = _this.getClassNames('enter'),
+          doneClassName = _this$getClassNames3.doneClassName;
+
       _this.removeClasses(node, appearing ? 'appear' : 'enter');
+      addClass(node, doneClassName);
 
       if (_this.props.onEntered) {
         _this.props.onEntered(node);
       }
     }, _this.onExit = function (node) {
-      var _this$getClassNames3 = _this.getClassNames('exit'),
-          className = _this$getClassNames3.className;
+      var _this$getClassNames4 = _this.getClassNames('exit'),
+          className = _this$getClassNames4.className;
 
       _this.removeClasses(node, 'appear');
       _this.removeClasses(node, 'enter');
@@ -82782,8 +82785,8 @@ var CSSTransition = function (_React$Component) {
         _this.props.onExit(node);
       }
     }, _this.onExiting = function (node) {
-      var _this$getClassNames4 = _this.getClassNames('exit'),
-          activeClassName = _this$getClassNames4.activeClassName;
+      var _this$getClassNames5 = _this.getClassNames('exit'),
+          activeClassName = _this$getClassNames5.activeClassName;
 
       _this.reflowAndAddClass(node, activeClassName);
 
@@ -82791,7 +82794,11 @@ var CSSTransition = function (_React$Component) {
         _this.props.onExiting(node);
       }
     }, _this.onExited = function (node) {
+      var _this$getClassNames6 = _this.getClassNames('exit'),
+          doneClassName = _this$getClassNames6.doneClassName;
+
       _this.removeClasses(node, 'exit');
+      addClass(node, doneClassName);
 
       if (_this.props.onExited) {
         _this.props.onExited(node);
@@ -82804,24 +82811,32 @@ var CSSTransition = function (_React$Component) {
 
       var activeClassName = typeof classNames !== 'string' ? classNames[type + 'Active'] : className + '-active';
 
-      return { className: className, activeClassName: activeClassName };
+      var doneClassName = typeof classNames !== 'string' ? classNames[type + 'Done'] : className + '-done';
+
+      return {
+        className: className,
+        activeClassName: activeClassName,
+        doneClassName: doneClassName
+      };
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   CSSTransition.prototype.removeClasses = function removeClasses(node, type) {
     var _getClassNames = this.getClassNames(type),
         className = _getClassNames.className,
-        activeClassName = _getClassNames.activeClassName;
+        activeClassName = _getClassNames.activeClassName,
+        doneClassName = _getClassNames.doneClassName;
 
     className && removeClass(node, className);
     activeClassName && removeClass(node, activeClassName);
+    doneClassName && removeClass(node, doneClassName);
   };
 
   CSSTransition.prototype.reflowAndAddClass = function reflowAndAddClass(node, className) {
     // This is for to force a repaint,
     // which is necessary in order to transition styles when adding a class name.
     /* eslint-disable no-unused-expressions */
-    node.scrollTop;
+    node && node.scrollTop;
     /* eslint-enable no-unused-expressions */
     addClass(node, className);
   };
@@ -83046,7 +83061,7 @@ module.exports = PooledClass;
 var PooledClass = __webpack_require__(929);
 var ReactElement = __webpack_require__(72);
 
-var emptyFunction = __webpack_require__(35);
+var emptyFunction = __webpack_require__(34);
 var traverseAllChildren = __webpack_require__(940);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
