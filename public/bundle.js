@@ -30223,11 +30223,11 @@ var Reservation = function (_React$Component) {
             _react2.default.createElement(
               'iframe',
               { id: 'bookingCalendar',
-                src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://www.havasuparasail.com/stylesheets/reserveFrame.css', frameBorder: '0'
+                src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css', frameBorder: '0'
               },
               _react2.default.createElement(
                 'a',
-                { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://www.havasuparasail.com/stylesheets/reserveFrame.css' },
+                { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css' },
                 'Make Reservation'
               )
             )
