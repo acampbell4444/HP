@@ -8,21 +8,12 @@ import { calendar} from 'react-icons-kit/icomoon'
 import { browserHistory } from 'react-router'
 
 export default class Reservation extends React.Component {
-  state = {open: true}
-
-  onOpenModal = () => {
-    this.setState({ open: true })
-  }
-  onCloseModal = () => {
-    browserHistory.push('home')
-  }
-
+  
   componentDidMount() {
     window.scrollTo(0, 0)
   }
 
   render() {
-    const { open } = this.state
     return (
       <div id='reserveBody'>
         <div id='reserveCanvas'>
@@ -32,9 +23,9 @@ export default class Reservation extends React.Component {
       
      <div id='bCW'>
               <iframe id="bookingCalendar" 
-              src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css"                      frameBorder="0"
+              src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://www.havasuparasail.com/stylesheets/reserveFrame.css"                      frameBorder="0"
               >
-                <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css">Make Reservation</a>
+                <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://www.havasuparasail.com/stylesheets/reserveFrame.css">Make Reservation</a>
               </iframe>
       </div>
             

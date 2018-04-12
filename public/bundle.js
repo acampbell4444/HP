@@ -2752,7 +2752,7 @@ SafeAnchor.defaultProps = defaultProps;
 /* 39 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.4' };
+var core = module.exports = { version: '2.5.5' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -5453,7 +5453,7 @@ module.exports = function (it) {
 /* 84 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.4' };
+var core = module.exports = { version: '2.5.5' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -27447,14 +27447,29 @@ var Thumbs = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Thumbs.__proto__ || Object.getPrototypeOf(Thumbs)).call(this, props));
 
+        _this.setItemsWrapperRef = function (node) {
+            _this.itemsWrapperRef = node;
+        };
+
+        _this.setItemsListRef = function (node) {
+            _this.itemsListRef = node;
+        };
+
+        _this.setThumbsRef = function (node, index) {
+            if (!_this.thumbsRef) {
+                _this.thumbsRef = [];
+            }
+            _this.thumbsRef[index] = node;
+        };
+
         _this.updateSizes = function () {
-            if (!_this.props.children || !_this.refs.itemsWrapper) {
+            if (!_this.props.children || !_this.itemsWrapperRef) {
                 return;
             }
 
             var total = _this.props.children.length;
-            var wrapperSize = _this.refs.itemsWrapper.clientWidth;
-            var itemSize = _this.props.thumbWidth ? _this.props.thumbWidth : (0, _dimensions.outerWidth)(_this.refs.thumb0);
+            var wrapperSize = _this.itemsWrapperRef.clientWidth;
+            var itemSize = _this.props.thumbWidth ? _this.props.thumbWidth : (0, _dimensions.outerWidth)(_this.thumbsRef[0]);
             var visibleItems = Math.floor(wrapperSize / itemSize);
             var lastPosition = total - visibleItems;
             var showArrows = visibleItems < total;
@@ -27665,7 +27680,9 @@ var Thumbs = function (_Component) {
 
                 var thumbProps = {
                     key: index,
-                    ref: 'thumb' + index,
+                    ref: function ref(e) {
+                        return _this2.setThumbsRef(e, index);
+                    },
                     className: itemClass,
                     onClick: _this2.handleClickItem.bind(_this2, index, _this2.props.children[index])
                 };
@@ -27686,8 +27703,6 @@ var Thumbs = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
-
             if (!this.props.children) {
                 return null;
             }
@@ -27725,7 +27740,7 @@ var Thumbs = function (_Component) {
                 { className: _cssClasses2.default.CAROUSEL(false) },
                 _react2.default.createElement(
                     'div',
-                    { className: _cssClasses2.default.WRAPPER(false), ref: 'itemsWrapper' },
+                    { className: _cssClasses2.default.WRAPPER(false), ref: this.setItemsWrapperRef },
                     _react2.default.createElement('button', { type: 'button', className: _cssClasses2.default.ARROW_PREV(!hasPrev), onClick: this.slideRight }),
                     _react2.default.createElement(
                         _reactEasySwipe2.default,
@@ -27738,9 +27753,7 @@ var Thumbs = function (_Component) {
                             onSwipeStart: this.onSwipeStart,
                             onSwipeEnd: this.onSwipeEnd,
                             style: itemListStyles,
-                            ref: function ref(node) {
-                                return _this3.itemList = node;
-                            } },
+                            ref: this.setItemsListRef },
                         this.renderItems()
                     ),
                     _react2.default.createElement('button', { type: 'button', className: _cssClasses2.default.ARROW_NEXT(!hasNext), onClick: this.slideLeft })
@@ -30166,21 +30179,9 @@ var Reservation = function (_React$Component) {
   _inherits(Reservation, _React$Component);
 
   function Reservation() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, Reservation);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Reservation.__proto__ || Object.getPrototypeOf(Reservation)).call.apply(_ref, [this].concat(args))), _this), _this.state = { open: true }, _this.onOpenModal = function () {
-      _this.setState({ open: true });
-    }, _this.onCloseModal = function () {
-      _reactRouter.browserHistory.push('home');
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (Reservation.__proto__ || Object.getPrototypeOf(Reservation)).apply(this, arguments));
   }
 
   _createClass(Reservation, [{
@@ -30191,8 +30192,6 @@ var Reservation = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var open = this.state.open;
-
       return _react2.default.createElement(
         'div',
         { id: 'reserveBody' },
@@ -30224,11 +30223,11 @@ var Reservation = function (_React$Component) {
             _react2.default.createElement(
               'iframe',
               { id: 'bookingCalendar',
-                src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css', frameBorder: '0'
+                src: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://www.havasuparasail.com/stylesheets/reserveFrame.css', frameBorder: '0'
               },
               _react2.default.createElement(
                 'a',
-                { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=/assets/css/bookingcalendar-2.0/theme-grey-red.css' },
+                { href: 'https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://www.havasuparasail.com/stylesheets/reserveFrame.css' },
                 'Make Reservation'
               )
             )
@@ -31718,9 +31717,11 @@ function set(target, propertyKey, V /* , receiver */) {
   }
   if (has(ownDesc, 'value')) {
     if (ownDesc.writable === false || !isObject(receiver)) return false;
-    existingDescriptor = gOPD.f(receiver, propertyKey) || createDesc(0);
-    existingDescriptor.value = V;
-    dP.f(receiver, propertyKey, existingDescriptor);
+    if (existingDescriptor = gOPD.f(receiver, propertyKey)) {
+      if (existingDescriptor.get || existingDescriptor.set || existingDescriptor.writable === false) return false;
+      existingDescriptor.value = V;
+      dP.f(receiver, propertyKey, existingDescriptor);
+    } else dP.f(receiver, propertyKey, createDesc(0, V));
     return true;
   }
   return ownDesc.set === undefined ? false : (ownDesc.set.call(receiver, V), true);
@@ -80030,6 +80031,29 @@ var Carousel = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (Carousel.__proto__ || Object.getPrototypeOf(Carousel)).call(this, props));
 
+        _this.setThumbsRef = function (node) {
+            _this.thumbsRef = node;
+        };
+
+        _this.setCarouselWrapperRef = function (node) {
+            _this.carouselWrapperRef = node;
+        };
+
+        _this.setListRef = function (node) {
+            _this.listRef = node;
+        };
+
+        _this.setItemsWrapperRef = function (node) {
+            _this.itemsWrapperRef = node;
+        };
+
+        _this.setItemsRef = function (node, index) {
+            if (!_this.itemsRef) {
+                _this.itemsRef = [];
+            }
+            _this.itemsRef[index] = node;
+        };
+
         _this.autoPlay = function () {
             if (!_this.props.autoPlay) {
                 return;
@@ -80091,7 +80115,7 @@ var Carousel = function (_Component) {
             }
 
             var isHorizontal = _this.props.axis === 'horizontal';
-            var firstItem = _this.refs.item0;
+            var firstItem = _this.itemsRef[0];
             var itemSize = isHorizontal ? firstItem.clientWidth : firstItem.clientHeight;
 
             _this.setState({
@@ -80099,8 +80123,8 @@ var Carousel = function (_Component) {
                 wrapperSize: isHorizontal ? itemSize * _this.props.children.length : itemSize
             });
 
-            if (_this.refs.thumbs) {
-                _this.refs.thumbs.updateSizes();
+            if (_this.thumbsRef) {
+                _this.thumbsRef.updateSizes();
             }
         };
 
@@ -80197,7 +80221,7 @@ var Carousel = function (_Component) {
         };
 
         _this.setPosition = function (position) {
-            var list = _reactDom2.default.findDOMNode(_this.list);
+            var list = _reactDom2.default.findDOMNode(_this.listRef);
             ['WebkitTransform', 'MozTransform', 'MsTransform', 'OTransform', 'transform', 'msTransform'].forEach(function (prop) {
                 list.style[prop] = (0, _CSSTranslate2.default)(position, _this.props.axis);
             });
@@ -80249,13 +80273,13 @@ var Carousel = function (_Component) {
 
         _this.getInitialImage = function () {
             var selectedItem = _this.props.selectedItem;
-            var item = _this.refs['item' + selectedItem];
+            var item = _this.itemsRef[selectedItem];
             var images = item && item.getElementsByTagName('img');
             return images && images[selectedItem];
         };
 
         _this.getVariableImageHeight = function (position) {
-            var item = _this.refs['item' + position];
+            var item = _this.itemsRef[position];
             var images = item && item.getElementsByTagName('img');
             if (_this.state.hasMount && images.length > 0) {
                 var image = images[0];
@@ -80356,7 +80380,7 @@ var Carousel = function (_Component) {
         key: 'setupAutoPlay',
         value: function setupAutoPlay() {
             this.autoPlay();
-            var carouselWrapper = this.refs['carouselWrapper'];
+            var carouselWrapper = this.carouselWrapperRef;
 
             if (this.props.stopOnHover && carouselWrapper) {
                 carouselWrapper.addEventListener('mouseenter', this.stopOnHover);
@@ -80367,7 +80391,7 @@ var Carousel = function (_Component) {
         key: 'destroyAutoPlay',
         value: function destroyAutoPlay() {
             this.clearAutoPlay();
-            var carouselWrapper = this.refs['carouselWrapper'];
+            var carouselWrapper = this.carouselWrapperRef;
 
             if (this.props.stopOnHover && carouselWrapper) {
                 carouselWrapper.removeEventListener('mouseenter', this.stopOnHover);
@@ -80429,7 +80453,9 @@ var Carousel = function (_Component) {
             return _react2.default.Children.map(this.props.children, function (item, index) {
                 var itemClass = _cssClasses2.default.ITEM(true, index === _this2.state.selectedItem);
                 var slideProps = {
-                    ref: 'item' + index,
+                    ref: function ref(e) {
+                        return _this2.setItemsRef(e, index);
+                    },
                     key: 'itemKey' + index,
                     className: _cssClasses2.default.ITEM(true, index === _this2.state.selectedItem),
                     onClick: _this2.handleClickItem.bind(_this2, index, item)
@@ -80487,15 +80513,13 @@ var Carousel = function (_Component) {
 
             return _react2.default.createElement(
                 _Thumbs2.default,
-                { ref: 'thumbs', onSelectItem: this.handleClickThumb, selectedItem: this.state.selectedItem, transitionTime: this.props.transitionTime, thumbWidth: this.props.thumbWidth },
+                { ref: this.setThumbsRef, onSelectItem: this.handleClickThumb, selectedItem: this.state.selectedItem, transitionTime: this.props.transitionTime, thumbWidth: this.props.thumbWidth },
                 this.props.children
             );
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this4 = this;
-
             if (!this.props.children || this.props.children.length === 0) {
                 return null;
             }
@@ -80569,21 +80593,19 @@ var Carousel = function (_Component) {
             }
             return _react2.default.createElement(
                 'div',
-                { className: this.props.className, ref: 'carouselWrapper' },
+                { className: this.props.className, ref: this.setCarouselWrapperRef },
                 _react2.default.createElement(
                     'div',
                     { className: _cssClasses2.default.CAROUSEL(true), style: { width: this.props.width } },
                     _react2.default.createElement('button', { type: 'button', className: _cssClasses2.default.ARROW_PREV(!hasPrev), onClick: this.decrement }),
                     _react2.default.createElement(
                         'div',
-                        { className: _cssClasses2.default.WRAPPER(true, this.props.axis), style: containerStyles, ref: 'itemsWrapper' },
+                        { className: _cssClasses2.default.WRAPPER(true, this.props.axis), style: containerStyles, ref: this.setItemsWrapperRef },
                         this.props.swipeable ? _react2.default.createElement(
                             _reactEasySwipe2.default,
                             _extends({
                                 tagName: 'ul',
-                                ref: function ref(c) {
-                                    return _this4.list = c;
-                                }
+                                ref: this.setListRef
                             }, swiperProps, {
                                 allowMouseEvents: this.props.emulateTouch }),
                             this.renderItems()
