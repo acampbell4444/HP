@@ -23,9 +23,9 @@ export default class Reservation extends React.Component {
       
      <div id='bCW'>
               <iframe id="bookingCalendar" 
-              src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://localhost:1337/webReserv.css"  frameBorder="0"
+              src="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=https://www.havasuparasail.com/webReserv.css"  frameBorder="0"
               >
-                <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=http://localhost:1337/webReserv.css">Make Reservation</a>
+                <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=https://www.havasuparasail.com/webReserv.css">Make Reservation</a>
               </iframe>
       </div>
             
