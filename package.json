@@ -72,6 +72,7 @@
     "react-dom": "^15.6.2",
     "react-grid-gallery": "^0.4.8",
     "react-html5video": "^2.5.1",
+    "react-https-redirect": "^1.0.10",
     "react-icons-kit": "^1.0.7",
     "react-redux": "^4.4.5",
     "react-responsive-accordion": "^1.0.0",

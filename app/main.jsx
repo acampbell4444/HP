@@ -3,6 +3,7 @@
 import 'babel-polyfill'
 import React from 'react'
 import {Router, Route, IndexRedirect, hashHistory} from 'react-router'
+import HttpsRedirect from 'react-https-redirect'
 import {render} from 'react-dom'
 import {connect, Provider} from 'react-redux'
 import store from './store'
@@ -60,7 +61,9 @@ export default ROUTES
 
 render(
   <Provider store={store}>
-    {ROUTES}
+    <HttpsRedirect>
+      {ROUTES}
+    </HttpsRedirect>
   </Provider>,
   document.getElementById('main')
 )
