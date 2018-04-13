@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { browserHistory } from 'react-router'
+import { hashHistory } from 'react-router'
 import { Carousel } from 'react-responsive-carousel'
 
 export default class Home extends Component {
@@ -23,7 +23,7 @@ export default class Home extends Component {
                       <p id='leg1subText'>Parasailing is safe, easy, and fun.<br/> No skill required. 
                       <br/>Take off and gently land sitting on the boat.</p>
                       
-                      <div id='bookingButton' onClick={e => browserHistory.push('reservations')}>
+                      <div id='bookingButton' onClick={e => hashHistory.push('reservations')}>
                         <span id='bkTxt'> BOOK NOW</span>
                       </div>
                     </div>
@@ -45,7 +45,7 @@ export default class Home extends Component {
                       <p id='leg2Text'>
                         We look forward to making this experience the highlight of your stay on Lake Havasu.
                       </p>
-                      <div id='bookingButton2' onClick={e => browserHistory.push('reservations')}>
+                      <div id='bookingButton2' onClick={e => hashHistory.push('reservations')}>
                         BOOK NOW
                       </div>
                     </div>
@@ -69,7 +69,7 @@ export default class Home extends Component {
                     <li className="list-group-item">$60 per person.</li>
                   </ul>
                   <div className="card-body">
-                    <p id='resClick' onClick={e => browserHistory.push('reservations')} className="card-link">Click to Book Online.</p>
+                    <p id='resClick' onClick={e => hashHistory.push('reservations')} className="card-link">Click to Book Online.</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default class Home extends Component {
                       <li className="list-group-item">$70 per person.</li>
                     </ul>
                     <div className="card-body">
-                      <p id='resClick' onClick={e => browserHistory.push('reservations')} className="card-link">Click to Book Online.</p>
+                      <p id='resClick' onClick={e => hashHistory.push('reservations')} className="card-link">Click to Book Online.</p>
                     </div>
                   </div>
                 </div>

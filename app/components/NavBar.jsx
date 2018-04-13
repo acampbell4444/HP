@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, NavItem, NavDropdown, MenuItem, Nav, Image, ButtonGroup, Button } from 'react-bootstrap'
-import { browserHistory } from 'react-router'
+import { hashHistory } from 'react-router'
 import Icon from 'react-icons-kit'
 import { facebook } from 'react-icons-kit/icomoon/facebook'
 import { instagram } from 'react-icons-kit/icomoon/instagram'
@@ -23,7 +23,7 @@ export default class NavBar extends Component {
 		   <div>
 			<NavItem eventKey={6} 
 					 onClick={e => {
-						browserHistory.push('home')
+						hashHistory.push('home')
 						this.setState({toggleNav: false})
 					 }}
 
@@ -51,29 +51,29 @@ export default class NavBar extends Component {
 		  <Nav pullRight>
 
 		   <NavItem eventKey={1} href="#" 
-		   			onClick={e => browserHistory.push('home')} 
+		   			onClick={e => hashHistory.push('home')} 
 		   >
 		     <span id='navLinkTextfirst' style={{color: rte == 'home' ? '#DB4C3F' : 'white'}}> home </span>
 		   </NavItem>
 
 		   <NavItem eventKey={2} href="#" 
-		   			onClick={e => browserHistory.push('reservations')} 
+		   			onClick={e => hashHistory.push('reservations')} 
 		   >
 		      <span id='navLinkTextSecond' style={{color: rte == 'reservations' ? '#DB4C3F' : 'white'}}> reservations </span>
 		   </NavItem>		   
 		   
 		   <NavItem eventKey={3} href="#"
-		   			onClick={e => browserHistory.push('gallery')}
+		   			onClick={e => hashHistory.push('gallery')}
 		   >
 		      <span id='navLinkText'style={{color: rte == 'gallery' ? '#DB4C3F' : 'white'}}> gallery </span>
 		   </NavItem>
 {/*		   <NavItem id='navLinkText' eventKey={4} href="#"
-					onClick={e => browserHistory.push('contact')}
+					onClick={e => hashHistory.push('contact')}
 		   >
 		      contact
 		   </NavItem>*/}
 		   <NavItem eventKey={5} href="#"
-		   			onClick={e => browserHistory.push('faq')}
+		   			onClick={e => hashHistory.push('faq')}
 		   >
 		      <span id='navLinkText' style={{color: rte == 'FAQ' ? '#DB4C3F' : 'white'}}> faq </span>
 		   </NavItem>

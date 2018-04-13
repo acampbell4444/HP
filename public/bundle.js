@@ -29988,7 +29988,7 @@ var Footer = function (_Component) {
             _react2.default.createElement(
               'span',
               { id: 'footerText1', onClick: function onClick(e) {
-                  return _reactRouter.browserHistory.push('home');
+                  return _reactRouter.hashHistory.push('home');
                 } },
               'Havasu Parasail'
             ),
@@ -35100,7 +35100,7 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { id: 'bookingButton', onClick: function onClick(e) {
-                    return _reactRouter.browserHistory.push('reservations');
+                    return _reactRouter.hashHistory.push('reservations');
                   } },
                 _react2.default.createElement(
                   'span',
@@ -35145,7 +35145,7 @@ var Home = function (_Component) {
               _react2.default.createElement(
                 'div',
                 { id: 'bookingButton2', onClick: function onClick(e) {
-                    return _reactRouter.browserHistory.push('reservations');
+                    return _reactRouter.hashHistory.push('reservations');
                   } },
                 'BOOK NOW'
               )
@@ -35209,7 +35209,7 @@ var Home = function (_Component) {
                   _react2.default.createElement(
                     'p',
                     { id: 'resClick', onClick: function onClick(e) {
-                        return _reactRouter.browserHistory.push('reservations');
+                        return _reactRouter.hashHistory.push('reservations');
                       }, className: 'card-link' },
                     'Click to Book Online.'
                   )
@@ -35262,7 +35262,7 @@ var Home = function (_Component) {
                   _react2.default.createElement(
                     'p',
                     { id: 'resClick', onClick: function onClick(e) {
-                        return _reactRouter.browserHistory.push('reservations');
+                        return _reactRouter.hashHistory.push('reservations');
                       }, className: 'card-link' },
                     'Click to Book Online.'
                   )
@@ -35453,7 +35453,7 @@ var NavBar = function (_Component) {
 									_reactBootstrap.NavItem,
 									{ eventKey: 6,
 										onClick: function onClick(e) {
-											_reactRouter.browserHistory.push('home');
+											_reactRouter.hashHistory.push('home');
 											_this2.setState({ toggleNav: false });
 										}
 
@@ -35500,7 +35500,7 @@ var NavBar = function (_Component) {
 								_reactBootstrap.NavItem,
 								{ eventKey: 1, href: '#',
 									onClick: function onClick(e) {
-										return _reactRouter.browserHistory.push('home');
+										return _reactRouter.hashHistory.push('home');
 									}
 								},
 								_react2.default.createElement(
@@ -35513,7 +35513,7 @@ var NavBar = function (_Component) {
 								_reactBootstrap.NavItem,
 								{ eventKey: 2, href: '#',
 									onClick: function onClick(e) {
-										return _reactRouter.browserHistory.push('reservations');
+										return _reactRouter.hashHistory.push('reservations');
 									}
 								},
 								_react2.default.createElement(
@@ -35526,7 +35526,7 @@ var NavBar = function (_Component) {
 								_reactBootstrap.NavItem,
 								{ eventKey: 3, href: '#',
 									onClick: function onClick(e) {
-										return _reactRouter.browserHistory.push('gallery');
+										return _reactRouter.hashHistory.push('gallery');
 									}
 								},
 								_react2.default.createElement(
@@ -35539,7 +35539,7 @@ var NavBar = function (_Component) {
 								_reactBootstrap.NavItem,
 								{ eventKey: 5, href: '#',
 									onClick: function onClick(e) {
-										return _reactRouter.browserHistory.push('faq');
+										return _reactRouter.hashHistory.push('faq');
 									}
 								},
 								_react2.default.createElement(
@@ -35895,7 +35895,7 @@ var onFAQEnter = function onFAQEnter() {
 
 var ROUTES = _react2.default.createElement(
   _reactRouter.Router,
-  { history: _reactRouter.browserHistory },
+  { history: _reactRouter.hashHistory },
   _react2.default.createElement(
     _reactRouter.Route,
     { path: '/', component: HavasuParasail },

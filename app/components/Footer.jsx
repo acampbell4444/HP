@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { browserHistory } from 'react-router'
+import { hashHistory } from 'react-router'
 
 export default class Footer extends Component {
 
@@ -8,7 +8,7 @@ export default class Footer extends Component {
     <div>
       <div id='footer'>
         <p>
-         <span id='footerText1' onClick={e => browserHistory.push('home')}> 
+         <span id='footerText1' onClick={e => hashHistory.push('home')}> 
            Havasu Parasail  
         </span> 
          <span id='dot'> • </span>
