@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import Modal from 'react-responsive-modal'
 import { Button } from 'react-bootstrap'
-import $ from 'jquery'
+import $ from "jquery"
 import Icon from 'react-icons-kit'
 import { calendar} from 'react-icons-kit/icomoon'
 import { hashHistory } from 'react-router'
