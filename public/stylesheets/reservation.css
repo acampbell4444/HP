@@ -17,16 +17,16 @@
 }
 
 #contactDetails, #openDate {
-  font-size: 13px;
+  font-size: 12px;
   font-style: italic;
-  color: #143E8F;
+  color: #143E8F !important;
   text-align: center;
   margin: 30px 20px 30px 20px;
 }
 
 #openDate {
   font-size: 22px;
-  color: #D32C30;
+  color: #D32C30 !important;
   font-weight: 900;
   text-align: center;
   margin: 30px 20px 30px 10px;
