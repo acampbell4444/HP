@@ -1,3 +1,11 @@
 #schedulelist {
 	width: 250px !important;
 }
+
+input {
+	font-size: 16px !important;
+}
+
+option {
+	font-size: 16px !important;
+}
