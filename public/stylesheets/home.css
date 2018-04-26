@@ -45,6 +45,8 @@
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 black;
+    -webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #leg2Text {
@@ -257,6 +259,31 @@
   -webkit-box-shadow: 0 20px 12px -12px #777;
      -moz-box-shadow: 0 20px 12px -12px #777;
           box-shadow: 0 20px 12px -12px #777;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 
