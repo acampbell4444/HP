@@ -66,7 +66,7 @@ export default class Home extends Component {
                   <ul className="list-group list-group-flush">
                     <li className="list-group-item">6 Passengers Max.</li>
                     <li className="list-group-item">Take off and land on boat.</li>
-                    <li className="list-group-item">$60 per person.</li>
+                    <li className="list-group-item">$69 per person.</li>
                   </ul>
                   <div className="card-body">
                     <p id='resClick' onClick={e => hashHistory.push('reservations')} className="card-link">Click to Book Online.</p>
@@ -83,7 +83,7 @@ export default class Home extends Component {
                     <ul className="list-group list-group-flush">
                       <li className="list-group-item">6 Passengers Max.</li>
                       <li className="list-group-item">Up to 3 in air at same time.</li>
-                      <li className="list-group-item">$70 per person.</li>
+                      <li className="list-group-item">$79 per person.</li>
                     </ul>
                     <div className="card-body">
                       <p id='resClick' onClick={e => hashHistory.push('reservations')} className="card-link">Click to Book Online.</p>

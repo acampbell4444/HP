@@ -27,9 +27,9 @@ export default class FAQ extends Component {
           </div>
 
           <div data-trigger="Q: How much does it cost to go parasailing?">
-            <p className="answer flex">800 ft. Flight : $70 per person<br/>
-            600 ft. Flight : $60 per person<br/>
-            Non-Flying passenger : $20 per person </p>
+            <p className="answer flex">800 ft. Flight : $79 per person<br/>
+            600 ft. Flight : $69 per person<br/>
+            Non-Flying passenger : $25 per person </p>
           </div> 
 
           <div data-trigger="Q: Do I have to get wet?">
