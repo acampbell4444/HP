@@ -57,24 +57,6 @@
 
 }
 
-@media only screen and (min-width: 768px) {
-
-  #reserveTitle {
-    font-size: 40px;
-    margin-top: 200px;
-  }
-
-  #contactDetails, #openDate {
-    font-size: 16px;
-    margin: 30px 100px 20px 100px;
-  }
-
-  #openDate {
-    font-size: 27px;
-  }
-
-}
-
 
 
 
@@ -113,7 +95,7 @@ span > #sRise {
 
 #sun {
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0%;
   width: 100%;
   height: 50%;
@@ -128,7 +110,7 @@ span > #sRise {
 
 #sunDay {
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -143,7 +125,7 @@ span > #sRise {
 
 #moon {
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -158,7 +140,7 @@ span > #sRise {
 
 #sunSet {
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -174,7 +156,7 @@ span > #sRise {
 #sky {
   cursor: pointer;
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -195,7 +177,7 @@ span > #sRise {
   -moz-perspective-origin: 50% 300%;
   overflow: hidden;
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: -50%;
   width: 200%;
   height: 50%;
@@ -266,7 +248,7 @@ span > #sRise {
    position: absolute;
    display: block;
    color: #fff;
-   top: 1000px;
+   top: 2000px;
    left: -10px;
    width: 0px;
    height: 0px;
@@ -295,7 +277,7 @@ span > #sRise {
 #horizon {
   cursor: pointer;
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0;
   width: 100%;
   height: 50%;
@@ -311,7 +293,7 @@ span > #sRise {
 #horizonNight {
   cursor: pointer;
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0;
   width: 100%;
   height: 50%;
@@ -328,7 +310,7 @@ span > #sRise {
   background-color: #000;
   opacity: 0;
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -340,7 +322,7 @@ span > #sRise {
   background-color: #000;
   opacity: 0;
   position: absolute;
-  bottom: -1000px;
+  bottom: -2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -349,7 +331,7 @@ span > #sRise {
 
 #waterDistance {
   position: absolute;
-  bottom: -1000px;
+  bottom: -2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -363,7 +345,7 @@ span > #sRise {
 #water {
   overflow: hidden;
   position: absolute;
-  bottom: -1000px;
+  bottom: -2000px;
   left: 0px;
   width: 100%;
   height: 50%;
@@ -383,7 +365,7 @@ span > #sRise {
   perspective-origin: 50% -12%;
   overflow: hidden;
   position: absolute;
-  top: 1500px;
+  top: 2500px;
   left: -3%;
   width: 103%;
   height: 25%;
@@ -392,7 +374,7 @@ span > #sRise {
 
 #waterReflectionMiddle {
   position: absolute;
-  top: 1000px;
+  top: 2000px;
   left: -50%;
   width: 200%;
   height: 55%;
@@ -408,7 +390,7 @@ span > #sRise {
 
 #waterReflectionMiddleThin {
   position: absolute;
-  bottom: 0px;
+  bottom: -2000px;
   left: 0px;
   width: 100%;
   height: 100%;
@@ -440,7 +422,7 @@ span > #sRise {
 #coor {
   position: absolute;
   left: 0px;
-  top: 1000px;
+  top: 2000px;
   z-index: 999;
   color: #fff;
 }
@@ -450,7 +432,7 @@ span > #sRise {
   opacity: 0.5;
   position: absolute;
   left: 0%;
-  bottom: -1000px;
+  bottom: -2000px;
   width: 100%;
   height: 50%;
   z-index: 10;
@@ -575,7 +557,94 @@ span > #sRise {
 }
 
 
+@media only screen and (min-width: 768px) {
 
+  #reserveTitle {
+    font-size: 40px;
+    margin-top: 200px;
+  }
+
+  #contactDetails, #openDate {
+    font-size: 16px;
+    margin: 30px 100px 20px 100px;
+  }
+
+  #openDate {
+    font-size: 27px;
+  }
+
+  #sun {
+    top: 1000px;
+  }
+
+  #sunDay {
+    top: 1000px;
+  }
+
+  #coor {
+    top: 1000px;
+  }
+
+  #waterReflectionMiddle {
+    top: 1000px;
+  }
+
+  #darknessOverlaySky {
+    top: 1000px;
+  }
+
+  #horizonNight {
+    top: 1000px;
+  }
+
+  #horizon {
+    top: 1000px;
+  }  
+
+  #moon {
+    top: 1000px;
+  }  
+
+  #sunSet {
+    top: 1000px;
+  }
+
+  .star:after {
+    top: 1000px;
+  } 
+
+  #starsContainer  {
+    top: 1000px;
+  }  
+
+  #sky  {
+    top: 1000px;
+  }
+
+  #darknessOverlay {
+    bottom: -1000px;
+  }  
+
+  #waterDistance {
+    bottom: -1000px;
+  }  
+
+  #water {
+    bottom: -1000px;
+  }
+
+  #oceanRipple {
+    bottom: -1000px;
+  }
+
+  #waterReflectionContainer {
+    top: 1500px;
+  }
+
+  #waterReflectionMiddleThin {
+    bottom: -1000px;
+  }
+}
 
 
 
