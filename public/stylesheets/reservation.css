@@ -57,15 +57,9 @@
 
 }
 
-
-
-
-
 #homeContainer {
   overflow-y: scroll;
 }
-
-
 
 #bkTxt {
   -webkit-animation: text-focus-in 1.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -90,6 +84,10 @@ span > #sRise {
   background-color: black;
   display: inline-block;
   position: absolute;
+}
+
+#sRiseOuter {
+  top: 2000px;
 }
 
 
@@ -616,6 +614,10 @@ span > #sRise {
   #starsContainer  {
     top: 1000px;
   }  
+
+  #sRiseOuter {
+  top: 1000px;
+}
 
   #sky  {
     top: 1000px;
