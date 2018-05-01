@@ -1,6 +1,6 @@
 #navBarLogo {
   height: 65px;
-  max-width: 65px;
+  width: 65px;
   margin-top: 1%;
   left: 0;
   z-index: 99;
@@ -15,17 +15,23 @@
 
 #logopic {
   margin-top: -40px;
+  -webkit-animation: bounce-top 1.8s both;
+          animation: bounce-top 1.8s both;
+
 }
 
 #bizName {
-  margin-top: 40px;
+  margin-top: 30px;
   width: 300px;
   color: white;
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: 900;
   margin-left: 4%;
   position: relative;
   z-index: 9999999;
   font-style: italic;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 ul {
@@ -47,6 +53,7 @@ li {
 #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
   font-size: 25px;
   padding: 15px;
+  font-weight: 900;
 }
 
 
@@ -63,6 +70,8 @@ li {
 
 .navbar-collapse.collapse.in {
 	z-index: 99999999;
+  position: fixed;
+  width: 100%;
 }
 
 .navButtGroup {
@@ -104,11 +113,11 @@ li {
 
 @media only screen and (min-width: 768px) {
   #navBarLogo {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 	  float: left;
 	  margin-top: 2%;
-    margin-left: 10px;
+    margin-left: -30px;
   }
 
   .center {
@@ -131,28 +140,38 @@ li {
     position:fixed;
     top: 100px;
     margin: 0 auto;
-    left: 35%;
+    left: 12%;
 }
 
   #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
     background-color: transparent;
     padding: 0px;
     padding-top: 15px;
-    font-size: 22px;
+    font-size: 23px;
+    font-weight: 900;
     margin-top: 40px;
   }
 
-
+  #havPar {
+    position: fixed;
+    top: 20px;
+  }
 
   #navLinkTextfirst {
     margin-top: 0px;
-    margin-left: 200px;
+    margin-left: 0px;
     z-index: 999;
     overflow: hidden;
     background-color: transparent;
     padding: 10px;
     padding-top: 15px;
-    padding-left: 50px;
+    padding-left: 20px;
+  }
+
+  #logopic {
+    margin-top: -50px;
+    height: 90px;
+    width: 90px;
   }
 
 
@@ -161,27 +180,58 @@ li {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .threeStars {
-    margin: 0 auto;
+@media only screen and (min-width: 820px) {
+  #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
+    font-size: 22px;
   }
 
-    .nav.navbar-nav {
+  #navBarLogo {
+    margin-left: -40px;
+  }
+
+  #navLinkTextfirst {
+    padding-left: 20px;
+  }
+
+  #havPar {
+    top: 20px;
+  }
+
+  .navButtGroup {
+    left: 18%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  
+  #havPar {
+    font-size: 40px;
+  }
+
+  .nav.navbar-nav {
      font-size: 27px;
   }
 
   #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .navButtGroup {
-    left: 40%;
-   }
+    left: 14%;
+  }
+
+  #navBarLogo {
+    margin-left: -30px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .nav.navbar-nav {
     font-size: 29px;
+  }
+
+  #havPar {
+    top: 50px;
   }
 
   #navLinkText, #navLinkTextfirst, #navLinkTextSecond {
@@ -236,4 +286,136 @@ li {
             transform: rotate(360deg);
   }
 }
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
 

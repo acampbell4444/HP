@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Accordion from 'react-responsive-accordion'
+import { hashHistory } from 'react-router'
 
 export default class FAQ extends Component {
 
@@ -18,8 +19,9 @@ export default class FAQ extends Component {
                  startPosition={200}
       >
 
-          <div data-trigger="Q: Where do we meet you? How do we find the boat?">
-            <p className="answer flex">If you make a reservation- we will make sure to contact you over the phone to arrange the exact details of how to meet us. If desired, we can meet you on the lake, and transfer from your boat. For land pickups- we will arrange a convenient meeting point for both parties. We are currently working on terms for a central location.</p>
+          <div data-trigger="Q: Where are you located? How do we find the boat?">
+            <p className="answer flex">We operate out of the Nautical Beach Resort. You sign up with Nautical Watersports
+            , and they will direct you to our boat. <a onClick={e => hashHistory.push('location')}> 1000 McCulloch Blvd, Lake Havasu City, AZ 86403.</a> Off-site pickups are available for an extra fee, if previously arranged by phone.</p>
           </div>    
 
           <div data-trigger="Q: How long are the flight times?">

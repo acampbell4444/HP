@@ -13,8 +13,8 @@ import Home from './containers/homeContainer'
 import Gallery from './containers/galleryContainer'
 
 import Reservation from './components/Reservation'
-import Contact from './components/Contact'
 import FAQ from './components/FAQ'
+import Location from './components/Location'
 
 import Login from './components/Login'
 import WhoAmI from './components/WhoAmI'
@@ -38,8 +38,8 @@ const HavasuParasail = connect(
 const onHomeEnter = () => store.dispatch(updateCurrentRoute('home'))
 const onReservationsEnter = () => store.dispatch(updateCurrentRoute('reservations'))
 const onGalleryEnter = () => store.dispatch(updateCurrentRoute('gallery'))
-const onContactEnter = () => store.dispatch(updateCurrentRoute('contact'))
 const onFAQEnter = () => store.dispatch(updateCurrentRoute('FAQ'))
+const onLocationEnter = () => store.dispatch(updateCurrentRoute('location'))
 
 const ROUTES = (
 
@@ -49,8 +49,8 @@ const ROUTES = (
         <Route path="/home" component={Home} onEnter={onHomeEnter}/>
         <Route path="/reservations" component={Reservation} onEnter={onReservationsEnter}/>
         <Route path="/gallery" component={Gallery} onEnter={onGalleryEnter}/>
-        <Route path="/contact" component={Contact} onEnter={onContactEnter}/>
         <Route path="/faq" component={FAQ} onEnter={onFAQEnter}/>
+        <Route path="/location" component={Location} onEnter={onLocationEnter}/>
       </Route>
       <Route path='*' component={NotFound} />
     </Router>

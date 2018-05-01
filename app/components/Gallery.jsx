@@ -21,7 +21,7 @@ export default class Gall extends Component {
         <div id='afterGallery'></div>
       </div>
     )
-   }
+  }
 }
 
 const IMAGES =

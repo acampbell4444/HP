@@ -3,6 +3,10 @@
   height: 100%
 }
 
+#sRiseOuter {
+  display: none;
+}
+
 .topmenu > h1 {
   font-size: 400px;
 }
@@ -29,7 +33,7 @@
   color: #D32C30 !important;
   font-weight: 900;
   text-align: center;
-  margin: 30px 20px 30px 10px;
+  margin: 50px 20px 30px 10px;
   font-weight: 900;
 }
 
@@ -44,6 +48,8 @@
 #bookingCalendar{
   width: 100%;
   min-height: 500px;
+  min-height: 500px;
+  overflow-y: scroll;
   z-index: 999999;
   padding-bottom: 5%;
   margin: 0 auto;
@@ -564,11 +570,12 @@ span > #sRise {
 
   #contactDetails, #openDate {
     font-size: 16px;
-    margin: 30px 100px 20px 100px;
+    margin: 25px 100px 20px 100px;
   }
 
   #openDate {
     font-size: 27px;
+    margin-top: 180px;
   }
 
   #sun {
@@ -646,7 +653,13 @@ span > #sRise {
   #waterReflectionMiddleThin {
     bottom: -1000px;
   }
+
+  #sRiseOuter {
+    display: unset;
+  }
 }
+
+
 
 
 
