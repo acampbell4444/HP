@@ -20,8 +20,10 @@ export default class FAQ extends Component {
       >
 
           <div data-trigger="Q: Where are you located? How do we find the boat?">
-            <p className="answer flex">We operate out of the Nautical Beach Resort. You sign up with Nautical Watersports
-            , and they will direct you to our boat. <a onClick={e => hashHistory.push('location')}> 1000 McCulloch Blvd, Lake Havasu City, AZ 86403.</a> Off-site pickups are available for an extra fee, if previously arranged by phone.</p>
+            <p className="answer flex">We will announce our location very soon! For now, call us to arrange a pickup. </p>
+           {/* <p className="answer flex">We operate out of the Nautical Beach Resort. You sign up with Nautical Watersports
+            , and they will direct you to our boat. <a onClick={e => hashHistory.push('location')}> 1000 McCulloch Blvd, 
+            Lake Havasu City, AZ 86403.</a> Off-site pickups are available for an extra fee, if previously arranged by phone.</p>*/}
           </div>    
 
           <div data-trigger="Q: How long are the flight times?">
