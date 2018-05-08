@@ -24,7 +24,8 @@ export default class Home extends Component {
                       <br/>Take off and gently land sitting on the boat.</p>
                       
                       <div id='bookingButton' onClick={e => hashHistory.push('reservations')}>
-                        <span id='bkTxt'> BOOK NOW</span>
+{/*                        <span id='bkTxt'> BOOK NOW</span>
+*/}                        <span id='bkTxt'> COMING SOON!</span>
                       </div>
                     </div>
                 </div>

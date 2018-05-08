@@ -135,8 +135,8 @@ export default class Reservation extends React.Component {
     return (
       <div id='reserveBody'>
         <div id='reserveCanvas'>
-       <p id='openDate'>     Open May 4th, 2018 </p>
-       <p id='contactDetails'> * Reservation times less than 24 hours away should be booked by phone. We don't take your credit card info. Your actual total will vary, depending on what products (photos, etc) you purchase at the time of your trip.  </p>
+       <p id='openDate'>     Coming Soon! </p>
+{/*       <p id='contactDetails'> * Reservation times less than 24 hours away should be booked by phone. We don't take your credit card info. Your actual total will vary, depending on what products (photos, etc) you purchase at the time of your trip.  </p>
       
      <div id='bCW'>
               <iframe id="bookingCalendar" 
@@ -144,7 +144,7 @@ export default class Reservation extends React.Component {
               >
                 <a href="https://secure.webreserv.com/services/bookingcalendar.do?businessid=havasuparasailaz&embedded=y&search=0&avgrid=n&css=https://www.havasuparasail.com/webReserv.css">Make Reservation</a>
               </iframe>
-      </div>
+      </div>*/}
             
         </div>
 

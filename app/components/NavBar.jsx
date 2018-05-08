@@ -70,7 +70,7 @@ export default class NavBar extends Component {
 		                onClick={()=> window.open('https://www.facebook.com/havasuparasail/', '_blank')}>
                   <Icon size={30} icon={facebook}></Icon>
 		        </Button>
-		        <a href="tel:928-575-5043" >
+		        <a href="#" >
 		          <Button className='navButt' id='contact'>
 		            <Icon size={30} icon={phone}></Icon>
 		          </Button>
