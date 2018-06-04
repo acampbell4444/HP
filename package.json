@@ -1,4 +1,4 @@
- {
+{
   "name": "HAVASU_PARASAIL",
   "version": "0.0.1",
   "description": "A happy little skeleton.",
@@ -59,6 +59,7 @@
     "finalhandler": "^1.0.0",
     "homedir": "^0.6.0",
     "jquery": "^3.3.1",
+    "merge-descriptors": "^1.0.1",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-github2": "^0.1.10",
